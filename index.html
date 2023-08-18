@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kubwa General Hospital</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        div.img {
-            text-align: center;
-        }
-    </style>
+    <title>Slider With Caption</title>
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
 </head>
 <body>
-    <div class="img">
-        <img src="assets/images/coding.gif" alt="" width="40%">
-        <h4>This Website is Under Construction</h4>
-    </div>
+
+
+
+    <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="assets/images/doctor-hijab.jpg">
+          </li>
+          <li>
+            <img src="assets/images/doctor-male.jpg">
+          </li>
+          <li>
+            <img src="assets/images/nurse-female.jpg">
+          </li>
+          <li>
+            <img src="assets/images/nurse-male.jpg">
+          </li>
+        </ul>
+      </div>
+    
+    <script src="assets/js/jqueryv3.4.1.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slider({
+                height: 690,
+                indicators: false
+
+            });
+        });
+    </script>
 </body>
 </html>
