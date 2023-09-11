@@ -26,6 +26,14 @@
       .resize-img {
         max-width: 15% !important;
       }
+
+      .inline-block {
+        display: inline-block !important;
+      }
+
+      .p-m {
+        padding: 30px !important;
+      }
     </style>
 </head>
 <body>
@@ -34,13 +42,32 @@
   <header>
 
     <!-- Slider -->
-    <div class="slider">
+    <div class="slider desktop hide-on-med-and-down">
       <ul class="slides">
         <li>
           <img src="assets/images/doctor-hijab.jpg" class="responsive-img">
+          <div class="caption left-align ">
+            <h3 class="inline-block grey darken-4 rounded-edges p-m">Caring for you <br> since 1992</h3>
+          </div>
         </li>
         <li>
           <img src="assets/images/doctor-male.jpg" class="responsive-img">
+          <div class="caption left-align ">
+            <h3 class="inline-block white grey-text text-darken-3 rounded-edges p-m">Quality & Affordable <br> Healthcare</h3>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/nurse-female.jpg" class="responsive-img">
+          <div class="caption right-align ">
+            <h3 class="inline-block cyan darken-1 rounded-edges p-m">Trained & Qualified <br> Professionals</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="slider mobile hide-on-large-only">
+      <ul class="slides">
+        <li>
+          <img src="assets/images/doctor-hijab.jpg" class="responsive-img">
         </li>
         <li>
           <img src="assets/images/nurse-female.jpg" class="responsive-img">
@@ -211,12 +238,17 @@
       <h3 class="primary-txt">Contact Us</h3>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit iste quod eveniet ab nesciunt. Atque delectus ab quaerat sed dignissimos itaque dolore maxime numquam illum.</p>
       <br>
-      <a href="" class="btn btn-flat primary-bg white-text">Call Us Now</a>
+      <a href="tel:+23438329637" class="btn btn-flat primary-bg white-text">Call Us Now</a>
       <br> <br> <br>
       <!-- Map -->
       <hr>
-      <br>
-      <div class="hide-on-small-and-down">
+      <!-- For Small Screens -->
+      <div class="hide-on-large-only">
+        <br>
+        <a href="https://goo.gl/maps/pTQ3xzZZAwBauey96" target="_blank" style="text-decoration: underline !important;">View on Google Maps</a>
+      </div>
+      <div class="hide-on-med-and-down">
+        <br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.9641903372167!2d7.337297374455634!3d9.157703086962233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd9acb4dde4df%3A0xe08f37c5f0fcd9cf!2sKubwa%20General%20Hospital!5e0!3m2!1sen!2sng!4v1692657751709!5m2!1sen!2sng" width="950" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <br>
@@ -298,13 +330,11 @@
     <script src="assets/js/materialize.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('.slider').slider({
-                height: 690,
-                indicators: false
-
-            });
-            $('.fixed-action-btn').floatingActionButton();
-            $('.tooltipped').tooltip();
+          $('.slider.desktop').slider({height: 800, interval: 4000, indicators: false});
+          $('.slider.mobile').slider({height: 300, interval: 2000, indicators: false});
+          $('.fixed-action-btn').floatingActionButton();
+          $('.fixed-action-btn').floatingActionButton();
+          $('.tooltipped').tooltip();
         });
     </script>
 </body>
