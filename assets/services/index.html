@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/images/logo.png " type="image/x-icon">
   <title>Services | Kubwa General Hospital</title>
   <style>
     .rounded-edges {
@@ -40,6 +40,23 @@
   </style>
 </head>
 <body>
+  <header>
+    <div class="navbar-fixed">
+      <nav class="primary-bg">
+        <div class="nav-wrapper">
+          <div class="row">
+            <div class="col l6 push-l1">
+              <img src="/assets/images/logo.png" width="50px" alt="" class="responsive-img">
+            </div>
+            <div class="col l6 push-l3">
+                <a href="" class="">home</a>
+                <a href="" class="">services</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
   <section class="section">
     <div class="container">
       <h2 class="primary-txt">Our Services</h2>
@@ -130,10 +147,10 @@
           </div>
       </div>
     </div>
+  </section>
   
 
     <!-- footer section -->
-    </section>
     <footer class="page-footer primary-bg white-text">
       <div class="container">
         <div class="row">
@@ -201,12 +218,13 @@
     </div>
     
       <!-- JavaScript Below -->
-      <script src="assets/js/jqueryv3.4.1.js"></script>
-      <script src="assets/js/materialize.min.js"></script>
+      <script src="/assets/js/jqueryv3.4.1.js"></script>
+      <script src="/assets/js/materialize.min.js"></script>
       <script>
           $(document).ready(function(){
             $('.fixed-action-btn').floatingActionButton();
             $('.fixed-action-btn').floatingActionButton(); 
+            $('.tooltipped').tooltip();
           });
       </script>
 </body>
