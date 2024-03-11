@@ -33,6 +33,16 @@
         padding: 30px !important;
       }
 
+      @keyframes takeoff {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: .5;
+      }
+    }
+
+    a.take-off {animation: takeoff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;}
     </style>
 </head>
 <body>
@@ -110,7 +120,7 @@
         </div>
         <div class="footer-copyright black">
           <div class="container">
-            <p class="center-align">&copy; 2023 Kubwa General Hospital. Built by <a href="https://github.com/coresystechng" target="_blank" class="primary-txt" style="text-decoration: underline;">CORE-TECH</a></p>
+            <p class="center-align">&copy; 2024 Kubwa General Hospital. Built by <a href="https://github.com/coresystechng" target="_blank" class="take-off">🚀</a></p>
           </div>
         </div>
     </footer>

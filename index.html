@@ -56,6 +56,24 @@
       .light-blue:hover{
         background-color: #039ae557 !important;
       }
+
+      .tn-1:hover{
+        background-color: #fff;
+        transition: 1.5s;
+        font-size: large;
+        
+      }
+
+      @keyframes takeoff {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: .5;
+      }
+    }
+
+    a.take-off {animation: takeoff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;}
     </style>
 </head>
 <body>
@@ -165,7 +183,7 @@
           <h4 class="white-text">Consult Our Doctors, <br> Anytime</h4>
           <p class="p-text-fix white-text"> Whether you have questions about a troubling symptom, need to discuss treatment options, or simply seek medical advice, our dedicated team of doctors is just a click or call away.</p>
           <div class="center-align">
-             <a href="/" class="btn btn-flat primary-txt white hoverable">Learn More</a>
+             <a href="https://mailto:admin@kubwageneralhospital.ng" class="btn btn-flat primary-txt white hoverable">Learn More</a>
           </div>
         </div>
       </div>
@@ -353,7 +371,7 @@
     </div>
     <div class="footer-copyright black">
       <div class="container">
-        <p class="center-align">&copy; 2023 Kubwa General Hospital. Built by <a href="https://github.com/coresystechng" target="_blank" class="primary-txt" style="text-decoration: underline;">CORE-TECH</a></p>
+        <p class="center-align">&copy; 2024 Kubwa General Hospital. Built by <a href="https://github.com/coresystechng" target="_blank" class="take-off">🚀</a></p>
       </div>
     </div>
   </footer>
