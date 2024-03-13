@@ -41,7 +41,22 @@
     .absolute{
       position: absolute;
       top: 50%;
-      right: 5%;
+      right: 10%;
+    }
+
+
+    @media (max-width:1336px) {
+      .absolute{
+        right: 10%;
+        top: 30%;
+      }
+    }
+
+
+    @media (max-width:886px) {
+      .caption{
+        display: none;
+      }
     }
 
     .relative{
@@ -67,7 +82,7 @@
 <body>
 <header>
  <div class="relative">
-   <img src="/assets/images/doctor.jpg" width="100%" alt="pic of a doctor" class="responsive-img materialboxed">
+   <img src="/assets/images/doctor.jpg" width="100%" alt="pic of a doctor" class="responsive-img">
   </div>
   <div class="caption left-align ">
     <h3 class="inline-block grey darken-4 rounded-edges p-m white-text absolute">Our Services</h3>
