@@ -3,45 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/materialize.min.css">
     <title>Document</title>
+    <style>
+        .rounded-edges {
+          border-radius: 0 0 35px 35px !important;
+        }
+  
+        .primary-bg {
+          background-color: #16425b !important;
+        }
+  
+        .primary-txt {
+          color: #16425b !important;
+        }
+  
+        .resize-img {
+          max-width: 15% !important;
+        }
+  
+        .inline-block {
+          display: inline-block !important;
+        }
+  
+        .p-m {
+          padding: 30px !important;
+        }
+  
+        .p-text-fix {
+          font-size: 20px !important;
+          line-height: 0.8 em !important;
+          text-align: justify !important;
+        }
+  
+        .green:hover{
+          background-color: #4caf4f8c !important;
+        }
+  
+        .pink:hover{
+          background-color: #e91e6258 !important;
+        }
+  
+        .orange:hover{
+          background-color:  #fb8a005c !important;
+        }
+  
+        .light-blue:hover{
+          background-color: #039ae557 !important;
+        }
+  
+        .tn-1:hover{
+          background-color: #fff;
+          transition: 1.5s;
+          font-size: large;
+          
+        }
+  
+        @keyframes takeoff {
+        0%, 100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: .5;
+        }
+      }
+  
+      a.take-off {
+        animation: takeoff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  
+      .large-t{
+        font-weight: bold;
+      }
+  
+      .mb-2{
+        margin-bottom: -3px !important;
+      }
+  
+      .d-block{
+        display: block;
+        margin-top: 13px;
+      }
+      </style>
 </head>
 <body>
-    <h2>Privacy Policy</h2>
-    <p class="">
-        This Privacy Policy describes how [Your Website Name] ("we," "us," or "our") collects, uses, and shares information when you use our website [yourwebsite.com] (the "Site"). <br>
+    <main>
 
+        <div class="container">
+            <h2>Privacy Policy</h2>
+            <p class="">
+                This Privacy Policy describes how Kgh website ("we," "us," or "our") collects, uses, and shares information when you use our website [Kghwebsite.com] (the <a class="purple-text" style="text-decoration: underline;" href="/index.html">kgh website</a>).
+            </p>
+            <p>
+                Information We Collect
+                We may collect personal information that you provide to us, such as your name, email address, postal address, and phone number when you:
+                Subscribe to our newsletter
+            </p>
+            <p>
+                Contact us through the contact form or customer support
+                We may also automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device.
+            </p>
+            <p>
+                
+                How We Use Your Information
+                
+                We use the information we collect to:
+                
+                Provide and improve our services
+                Communicate with you
+                Personalize your experience
+                Prevent fraud and ensure the security of our website
+                Comply with legal obligations
+                Sharing Your Information
+            </p>
+                <p>
+                    We may share your personal information with third parties to help us use your information, as described above. For example, we use Shopify to power our online store. We also use Google Analytics to help us understand how our customers use the Site. You can read more about how Google uses your personal information here: Google Privacy Policy.
+                </p>
+                <p>
+                    Data Retention
+                    We will retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy unless a longer retention period is required or permitted by law.
+                </p>
+                <p>
+                    Your Rights
+                    You have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below.
+                </p>
+                <p>
+                    Changes to This Privacy Policy
+                    We may update this Privacy Policy from time to time to reflect changes in our practices. We will notify you of any changes by posting the new Privacy Policy on this page.
+                </p>
+                Contact Us
+                If you have any questions about this Privacy Policy, please contact us at [<a href="mailto:admin@kubwageneralhospital.ng" class="purple-text">admin@kubwageneralhospital.ng</a>].
+            </p>
+        </div>
+    </main>
+        <!-- Footer -->
+        <footer class="page-footer primary-bg white-text">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="assets/images/logo.png" alt="logo" class="resize-img">
+            <div class="" style="line-height: 20px; padding-top: 10px;">
+              <p></p>
+                <p class="large-t">Kubwa General Hospital,</p> 
+                <p class="">Okitipupa Crescent, Gado Nasko Road, Phase 4,</p>
+                <p class="">Abuja, Nigeria</p>
+            </div>
+        </div>
+        <div class="col s12 l4 push-l1">
+            <h5 class="">Quick Links</h5>
+            <a href="/index.html" class="white-text">Home</a><br>
+            <a href="/index.html#about" class="white-text">About Us</a><br>
+            <a href="/index.html#services" class="white-text">Services</a><br>
+            <a href="tel:+23438329637" class="white-text">Contact Us</a><br>
+        </div>
+        <div class="col l4 push-l1" style="line-height: 6px;">
+          <a href="/Privacy.html" class="white-text d-block">Privacy Policy</a>
+          <a href="/Terms and Con.html" class="white-text d-block">Terms and Conditions</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright black">
+      <div class="container">
+        <div class="text">
+          <p class="center-align">&copy;  <span id="currentYear">2024</span> Kubwa General Hospital. Built by <a href="https://github.com/coresystechng" target="_blank" class="take-off">🚀</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-Information We Collect
-We may collect personal information that you provide to us, such as your name, email address, postal address, and phone number when you:
-Subscribe to our newsletter
-
-Contact us through the contact form or customer support
-We may also automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device.
-
-How We Use Your Information
-
-We use the information we collect to:
-
-Provide and improve our services
-Communicate with you
-Personalize your experience
-Prevent fraud and ensure the security of our website
-Comply with legal obligations
-Sharing Your Information
-
-We may share your personal information with third parties to help us use your information, as described above. For example, we use Shopify to power our online store. We also use Google Analytics to help us understand how our customers use the Site. You can read more about how Google uses your personal information here: Google Privacy Policy.
-
-Data Retention
-We will retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy unless a longer retention period is required or permitted by law.
-
-Your Rights
-You have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below.
-
-Changes to This Privacy Policy
-We may update this Privacy Policy from time to time to reflect changes in our practices. We will notify you of any changes by posting the new Privacy Policy on this page.
-
-Contact Us
-If you have any questions about this Privacy Policy, please contact us at [your email address].
-    </p>
 </body>
 </html>
