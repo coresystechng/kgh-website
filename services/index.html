@@ -3,95 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/materialize.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="/assets/images/logo.png " type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Services | Kubwa General Hospital</title>
-  <style>
-    .rounded-edges {
-      border-radius: 0 0 35px 35px !important;
-    }
-
-    .primary-bg {
-      background-color: #16425b !important;
-    }
-
-    .primary-txt {
-      color: #16425b !important;
-    }
-
-    .resize-img {
-      max-width: 15% !important;
-    }
-
-    .inline-block {
-      display: inline-block !important;
-    }
-
-    .p-m {
-      padding: 30px !important;
-    }
-
-    .p-text-fix {
-      font-size: 20px !important;
-      line-height: 0.8 em !important;
-      text-align: justify !important;
-    }
-
-    .absolute{
-      position: absolute;
-      top: 40%;
-      right: 5%;
-    }
-
-
-    @media (max-width:1336px) {
-      .absolute{
-        width: 250px;
-        right: 2%;
-        top: 30%;
-      }
-    }
-
-
-    @media (max-width:886px) {
-      .caption{
-        display: none;
-        width: auto;
-      }
-    }
-
-    .relative{
-      position: relative;
-    }
-
-    @keyframes takeoff {
-      0%, 100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: .5;
-      }
-    }
-
-    a.take-off {animation: takeoff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;}
-
-    .large-t{
-      font-weight: bold;
-    }
-
-    
-    .mb-2{
-      margin-bottom: -3px !important;
-    }
-  </style>
 </head>
 <body>
-<header>
- <div class="relative">
-   <img src="/assets/images/doctor-with-s.jpg" width="100%" alt="pic of a doctor" class="responsive-img">
-  </div>
-</header>
+  <header>
+    <nav class="navbar navbar-expand-lg px-5 fixed-top">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img width="40" height="40" src="../assets/images/logo.png" />
+        </a>
+        <!-- mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item pe-2">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item pe-2">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item pe-2">
+              <a class="nav-link text-light" href="./services/index.html">Services</a>
+            </li>
+            <li class="nav-item pe-2">
+              <a class="nav-link text-light" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <a href="index.html" class="btn btn-light fw-semibold primary-text">Book a Service</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <!-- hero -->
+    <div class="hero-bg d-flex flex-row justify-content-around">
+      <div class="justify-content-center d-flex flex-column">
+        <p class="text-light pb-2"><i class="bi bi-hospital pe-2"></i>Welcome to Kubwa Hospital</p> 
+        <h1 class="text-light pb-2">Your health <br> and Well-Being <br> is our Top priority</h1> 
+        <p class="text-light pb-4" style="font-size: 14px;">We ensure you stay healthy, by giving you the <br> right advice and providing you with the best caretakers.</p>
+        <a href="" class="btn secondary-btn btn-lg w-75">Book an Appointment</a>
+      </div>
+      <div class="align-items-end text-end d-flex">
+        <img src="../assets/images/doctor-patient.jpg" alt="">
+      </div>
+    </div>
   <section class="section">
     <div class="container">
       <h2 class="primary-txt">Our Services</h2>
@@ -210,85 +175,52 @@
   
 
     <!-- footer section -->
-    <footer class="page-footer primary-bg white-text">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 l6">
-            <img src="/assets/images/logo.png" alt="logo" class="resize-img">
-              <div class="" style="line-height: 10px; padding-top: 10px;">
-                <p></p>
-                  <p class="large-t">Kubwa General Hospital,</p> 
-                  <p class="">Okitipupa Crescent, Gado Nasko Road, Phase 4,</p>
-                  <p class="">Abuja, Nigeria</p>
-              </div>
-          </div>
-          <div class="col s12 l6 push-l2">
-              <h5 class="">Quick Links</h5>
-              <a href="/index.html" class="white-text">Home</a><br>
-              <a href="/index.html#about" class="white-text">About Us</a><br>
-              <a href="/index.html#services" class="white-text">Services</a><br>
-              <a href="tel:+23438329637" class="white-text">Contact Us</a><br>
-          </div>
+  <footer class="gradient-bg text-light pt-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Logo & Address -->
+        <div class="col-md-4">
+          <img src="assets/images/logo.png" alt="logo" width="60" height="60" class="mb-3">
+          <p class="fs-5 mb-1">Kubwa General Hospital,</p>
+          <p class="mb-1">Okitipupa Crescent, Gado Nasko Road, Phase 4,</p>
+          <p class="mb-0">Abuja, Nigeria</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="./index.html" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> Home</a></li>
+            <li><a href="#about" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> About Us</a></li>
+            <li><a href="#services" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> Services</a></li>
+            <li><a href="tel:+23438329637" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Policies -->
+        <div class="col-md-4">
+          <h5 class="mb-3">Legal</h5>
+          <a href="/Privacy.html" class="text-light d-block text-decoration-none mb-2"><i class="bi bi-hospital pe-2"></i> Privacy Policy</a>
+          <a href="/Terms and Con.html" class="text-light d-block text-decoration-none"><i class="bi bi-hospital pe-2"></i> Terms & Conditions</a>
         </div>
       </div>
-      <div class="footer-copyright black">
-        <div class="container">
-          <div class="text">
-            <p class="center-align">&copy;  <span id="currentYear">2024</span> Kubwa General Hospital. Built by <a href="https://github.com/coresystechng" target="_blank" class="take-off">🚀</a></p>
-          </div>
-        </div>
+
+      <hr class="my-4 border-light">
+
+      <!-- Bottom footer -->
+      <div class="text-center pb-3">
+        <p class="mb-0">
+          &copy; <span id="currentYear"></span> Kubwa General Hospital. Built by 
+          <a href="https://github.com/lome-ezehi" target="_blank" class="fw-bold lome text-decoration-none">Løme</a>
+        </p>
       </div>
-    </footer>
-        <!-- Fixed Action Button -->
-    <div class="fixed-action-btn">
-      <a class="btn-floating btn-large primary-bg pulse">
-        <i class="large">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform:msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
-        </i>
-      </a>
-      <ul>
-        <li>
-          <a href="/index.html" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Home">
-            <i class="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform: msFilter"><path d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z"></path></svg>
-            </i>
-          </a>
-        </li>
-        <li>
-          <a href="/index.html#services" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Our Services">
-            <i class="">
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" style="fill: #ffffff;"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-96 55.2C54 332.9 0 401.3 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-81-54-149.4-128-171.1V362c27.6 7.1 48 32.2 48 62v40c0 8.8-7.2 16-16 16H336c-8.8 0-16-7.2-16-16s7.2-16 16-16V424c0-17.7-14.3-32-32-32s-32 14.3-32 32v24c8.8 0 16 7.2 16 16s-7.2 16-16 16H256c-8.8 0-16-7.2-16-16V424c0-29.8 20.4-54.9 48-62V304.9c-6-.6-12.1-.9-18.3-.9H178.3c-6.2 0-12.3 .3-18.3 .9v65.4c23.1 6.9 40 28.3 40 53.7c0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7V311.2zM144 448a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg>
-            </i>
-          </a>
-        </li>
-        <li>
-          <a href="tel:+23438329637" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Call Us">
-            <i class="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform:msFilter"><path d="m16.793 5.793-4.5 4.5 1.414 1.414 4.5-4.5L21 10V3h-7z"></path><path d="M16.422 13.446a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.516a1 1 0 0 0-1.391-.087L3.299 5.29a.996.996 0 0 0-.291.648c-.015.25-.301 6.172 4.291 10.766 4.006 4.006 9.024 4.299 10.406 4.299.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"></path></svg>
-            </i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:admin@kubwageneralhospital.ng" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Message Us">
-            <i class="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform:msFilter"><path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.017C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-9 8a2 2 0 1 1-2-2c.086 0 .167.015.25.025.082-.014.164-.025.25-.025A1.5 1.5 0 0 1 11 9.5c0 .086-.012.168-.025.25.01.083.025.165.025.25zm4 2a2 2 0 0 1-2-2c0-.086.015-.167.025-.25A1.592 1.592 0 0 1 13 9.5 1.5 1.5 0 0 1 14.5 8c.086 0 .168.011.25.025.083-.01.164-.025.25-.025a2 2 0 0 1 0 4z"></path></svg>
-            </i>
-          </a>
-        </li>
-      </ul>
     </div>
+  </footer>
     
       <!-- JavaScript Below -->
       <script src="/assets/scripts/index.js"></script>
       <script src="/assets/js/jqueryv3.4.1.js"></script>
       <script src="/assets/js/materialize.min.js"></script>
-      <script>
-          $(document).ready(function(){
-            $('.fixed-action-btn').floatingActionButton();
-            $('.fixed-action-btn').floatingActionButton(); 
-            $('.tooltipped').tooltip();
-            $('.materialboxed').materialbox();
-          });
-      </script>
+      <script src="/assets/js/index.js"></script>
 </body>
 </html>

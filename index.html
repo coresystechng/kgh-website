@@ -4,352 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Kubwa General Hospital</title>
-    <link rel="stylesheet" href="assets/css/materialize.min.css">
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="description" content="The official website of Kubwa General Hospital, Abuja">
-    <meta name="keywords" content="General hopistal, Kubwa general, General hospital kubwa abuja, hospital, health, surgery, wellness, medicine, surgery,sickness, ilhealth, ear problems, dental health,pregnacare,pediatrics,medicated glasses,clinic,doctor,nurse,patient,ambulance,surgeon,health emergency, hospitalized, cardiology, radiology,trauma, dead, die,bedridden, wounded, morgue, radiotherapy, nuroloist,condition, covid-19, palliatuve, clinic, visits, allergy,cancer, diabetes. ">
-    <meta name="author" content="CORE-TECH, Collins Okoroafor, Sean Gbadamosi, Okpe Chinaza">
-
-    <style>
-      .rounded-edges {
-        border-radius: 0 0 35px 35px !important;
-      }
-
-      .primary-bg {
-        background-color: #16425b !important;
-      }
-
-      .primary-txt {
-        color: #16425b !important;
-      }
-
-      .resize-img {
-        max-width: 15% !important;
-      }
-
-      .inline-block {
-        display: inline-block !important;
-      }
-
-      .p-m {
-        padding: 30px !important;
-      }
-
-      .p-text-fix {
-        font-size: 20px !important;
-        line-height: 0.8 em !important;
-        text-align: justify !important;
-      }
-
-      .green:hover{
-        background-color: #4caf4f8c !important;
-      }
-
-      .pink:hover{
-        background-color: #e91e6258 !important;
-      }
-
-      .orange:hover{
-        background-color:  #fb8a005c !important;
-      }
-
-      .light-blue:hover{
-        background-color: #039ae557 !important;
-      }
-
-      .tn-1:hover{
-        background-color: #fff;
-        transition: 1.5s;
-        font-size: large;
-        
-      }
-
-      @keyframes takeoff {
-      0%, 100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: .5;
-      }
-    }
-
-    a.take-off {animation: takeoff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;}
-
-    .large-t{
-      font-weight: bold;
-    }
-
-    .mb-2{
-      margin-bottom: -3px !important;
-    }
-
-    .d-block{
-      display: block;
-      margin-top: 13px;
-    }
-    </style>
+    <meta name="keywords" content="General hopistal, Kubwa general, General hospital kubwa abuja, hospital, health, surgery, wellness, medicine, surgery,sickness, ilhealth, ear problems, dental health,pregnacare,pediatrics,medicated glasses,clinic,doctor,nurse,patient,ambulance,surgeon,health emergency, hospitalized, cardiology, radiology,trauma, dead, die, bedridden, wounded, morgue, radiotherapy, nuroloist,condition, covid-19, palliatuve, clinic, visits, allergy,cancer, diabetes. ">
+    <meta name="author" content="Ezehi Lome, CORE-TECH, Collins Okoroafor, Sean Gbadamosi, Okpe Chinaza">
 </head>
 <body>
-  
   <!-- Header -->
   <header>
+    <nav class="navbar navbar-expand-lg px-5 fixed-top">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img width="40" height="40" src="./assets/images/logo.png" />
+        </a>
+        <!-- mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item pe-2">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item pe-2">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item pe-2">
+              <a class="nav-link text-light" href="./services/index.html">Services</a>
+            </li>
+            <li class="nav-item pe-2">
+              <a class="nav-link text-light" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <a href="index.html" class="btn btn-light fw-semibold primary-text">Book a Service</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Slider -->
-    <div class="slider desktop hide-on-med-and-down" id="home">
-      <ul class="slides">
-        <li>
-          <img src="assets/images/doctor-hijab.jpg" class="responsive-img">
-          <div class="caption left-align ">
-            <h3 class="inline-block grey darken-4 rounded-edges p-m">Caring for you <br> since 1992</h3>
-          </div>
-        </li>
-        <li>
-          <img src="assets/images/doctor-male.jpg" class="responsive-img">
-          <div class="caption left-align ">
-            <h3 class="inline-block white grey-text text-darken-3 rounded-edges p-m">Quality & Affordable <br> Healthcare</h3>
-          </div>
-        </li>
-        <li>
-          <img src="assets/images/nurse-female.jpg" class="responsive-img">
-          <div class="caption right-align ">
-            <h3 class="inline-block cyan darken-1 rounded-edges p-m">Trained & Qualified <br> Professionals</h3>
-          </div>
-        </li>
-      </ul>
+  <!-- Main -->
+  <main>
+    <!-- hero -->
+    <div class="hero-bg d-flex flex-row justify-content-around">
+      <div class="justify-content-center d-flex flex-column">
+        <p class="text-light pb-2"><i class="bi bi-hospital pe-2"></i>Welcome to Kubwa Hospital</p> 
+        <h1 class="text-light pb-2">Your health <br> and Well-Being <br> is our Top priority</h1> 
+        <p class="text-light pb-4" style="font-size: 14px;">We ensure you stay healthy, by giving you the <br> right advice and providing you with the best caretakers.</p>
+        <a href="" class="btn secondary-btn btn-lg w-75">Book an Appointment</a>
+      </div>
+      <div class="align-items-end text-end d-flex">
+        <img src="./assets/images/female-nurse.png" alt="">
+      </div>
     </div>
-    <div class="slider mobile hide-on-large-only">
-      <ul class="slides">
-        <li>
-          <img src="assets/images/doctor-hijab.jpg" class="responsive-img">
-        </li>
-        <li>
-          <img src="assets/images/nurse-female.jpg" class="responsive-img">
-        </li>
-        <li>
-          <img src="assets/images/nurse-male.jpg" class="responsive-img">
-        </li>
-      </ul>
+
+    <!-- Absolute div -->
+    <div class="container hero-absolute shadow-lg" id="about">
+      <div class="row text-center">
+        <div class="col-4" style="border-right: solid 2px gray;">
+          <i class="material-icons primary-text" style="font-size: 30px;">healing</i> <br>
+          <span class="primary-text">Qualified Doctors</span> <br>
+          <span class="text-gray" style="font-size: 12px; padding: 0;">Lorem ipsum dolor sit amet.</span>
+        </div>
+        <div class="col-4" style="border-right: solid 2px gray;">
+          <i class="material-icons primary-text" style="font-size: 30px;">verified_user</i><br>
+          <span class="primary-text">Reliable Personnel</span><br>
+          <span class="text-gray" style="font-size: 12px;">Lorem ipsum dolor sit amet.</span>
+        </div>
+        <div class="col-4">
+          <i class="material-icons primary-text" style="font-size: 30px;">emergency</i><br>
+          <span class="primary-text">Safety Vehicles</span> <br>
+          <span class="text-gray" style="font-size: 12px;">Lorem ipsum dolor sit amet.</span>
+        </div>
+      </div>
     </div>
 
     <!-- Welcome Section -->
-    <section class="section" id="about">
-     <div class="container">
-      <h3 class="left-align primary-txt">Providing Healthcare to all</h3>
-      <p class=" p-text-fix">Welcome to Kubwa General Hospital, where healthcare care meets cutting-edge medicine. Our mission is to provide the highest quality healthcare services to our community, ensuring the well-being and comfort of every patient who walks through our doors. With a legacy of excellence spanning 22 years, we have earned the trust of our patients and the respect of our peers in the medical field.</p>
-      <div class="row center">
-        <div class="col s12 l3 m6">
-          <div class="card hoverable rounded-edges z-depth-0 green lighten-4">
-            <div class="card-content">
-              <div class="card-image center-align">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #16425b;transform:msFilter;"><path d="M21.86 12.48 19.15 8a2 2 0 0 0-1.72-1H15V5a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v10a2 2 0 0 0 1 1.73 3.49 3.49 0 0 0 7 .27h3.1a3.48 3.48 0 0 0 6.9 0 2 2 0 0 0 2-2v-3a1.07 1.07 0 0 0-.14-.52zM6.5 19A1.5 1.5 0 1 1 8 17.5 1.5 1.5 0 0 1 6.5 19zm5.5-8h-2v2H8v-2H6V9h2V7h2v2h2zm4.5 8a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5zM15 12V9h2.43l1.8 3z"></path></svg>
+    <section class="welcome-section container pt-3">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-6">
+            <p class="primary-text"><i class="bi bi-clipboard-pulse pe-2"></i>About us</p> 
+            <div class="col-12">
+              <h2>Welcome to Kubwa Hospital</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque facere inventore numquam aliquam? Accusamus in et assumenda sit temporibus ab laborum voluptatibus eligendi animi, minima, dignissimos soluepellendus.</p>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <p class="primary-text pb-2"><i class="bi bi-clipboard-pulse pe-2"></i>Lorem ipsum dolor sit amet.</p> 
               </div>
-              <p>Equipped to care for every patient.</p>
+              <div class="col-6">
+                <p class="primary-text pb-2"><i class="bi bi-clipboard-pulse pe-2"></i>Lorem ipsum dolor sit amet.</p> 
+              </div>
+              <div class="col-6">
+                <p class="primary-text pb-2"><i class="bi bi-clipboard-pulse pe-2"></i>Lorem ipsum dolor sit amet.</p> 
+              </div>
+              <div class="col-6">
+                <p class="primary-text pb-2"><i class="bi bi-clipboard-pulse pe-2"></i>Lorem ipsum dolor sit amet.</p> 
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s12 l3 m6">
-          <div class="card hoverable rounded-edges z-depth-0 pink lighten-5">
-            <div class="card-content">
-              <div class="card-image center-align">
-                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 576 512"><style>svg{fill:#16425b}</style><path d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1V192c0 53 43 96 96 96s96-43 96-96V71.1l-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1V192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112V265.3c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V336c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192V71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
-              </div>
-              <p>Qualified healthcare workers at your service.</p>
-
-            </div>
+          <div class="col-6">
+            <img src="./assets/images/african doctor.jpg.jpg" alt="">
           </div>
         </div>
-        <div class="col s12 l3 m6">
-          <div class="card hoverable rounded-edges z-depth-0 orange lighten-5">
-            <div class="card-content">
-              <div class="card-image center-align">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill:#16425b;transform: msFilter"><path d="M20 6h-3V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zM9 4h6v2H9zm7 10h-3v3h-2v-3H8v-2h3V9h2v3h3z"></path></svg>
-              </div>
-              <p> Accessible and affordable healthcare.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 l3 m6">
-          <div class="card hoverable rounded-edges z-depth-0 light-blue lighten-5">
-            <div class="card-content">
-              <div class="card-image center-align">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #16425b;transform: msFilter"><path d="M20 13.01h-7V10h1c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v4c0 1.103.897 2 2 2h1v3.01H4V18H3v4h4v-4H6v-2.99h5V18h-1v4h4v-4h-1v-2.99h5V18h-1v4h4v-4h-1v-4.99zM10 8V4h4l.002 4H10z"></path></svg>
-              </div>
-              <p>Connected to your local primary care center.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-     </div>
-    </section>
-  </header> 
- 
-  <!-- Main -->
-  <main>
-    <!-- Brief Description Section -->
-    <section class="section primary-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 l6">
-          <img src="assets/images/blur-hospital.jpg" alt="" class="responsive-img materialboxed">
-        </div>
-        <div class="col s12 l6">
-          <h4 class="white-text">Consult Our Doctors, <br> Anytime</h4>
-          <p class="p-text-fix white-text"> Whether you have questions about a troubling symptom, need to discuss treatment options, or simply seek medical advice, our dedicated team of doctors is just a click or call away.</p>
-          <div class="center-align">
-             <a href="mailto:admin@kubwageneralhospital.ng" class="btn btn-flat primary-txt white hoverable">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="section" id="services">
-    <div class="container">
-      <h2 class="primary-txt">Our Services</h2>
-      <p class="p-text-fix"> Our mission is to ensure the provision of safe, quality, affordable, adequate, equitable and accessible health services to all. Kubwa General Hospital is open from Monday through Sunday, we operate round the clock on a daily basis. We offer the following services and more
-      </p>
-      <div class="row center">
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/ambulance.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">Ambulance Services</span>
-                <p class="left-align">
-                  When you need ambulance services, medical first responders, Command Center
-                </p>
-                 <br>
-                 
-                <a href="/services/emergency.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+    <hr class="space border-dark">
+
+    <!-- Our Numbers Section -->
+    <section class="numbers-section">
+      <div class="container">
+        <h2 class="text-light text-center pb-3">Our Numbers</h2>
+        <div class="row text-center">
+          <div class="col-3 text-light">
+            <h1>120+</h1>
+            <p>Best Hospital Award</p>
           </div>
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/surgery.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">General Surgery</span>
-                <p class="left-align">A wide range of surgical services including hernia repair, stomach surgery, appendectomy</p>
-                 <br> 
-                <a href="/services/surgery-service.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+          <div class="col-3 text-light">
+            <h1>300+</h1>
+            <p>Patients treated</p>
           </div>
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/dentist.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">Dental Clinic</span>
-                <p class="left-align">Our services include dental checkups, general dental treatment, crowns and bridges, dentures,</p>
-                <br>
-                <a href="/services/dental-service.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+          <div class="col-3 text-light">
+            <h1>12</h1>
+            <p>Annual Fatalities</p>
           </div>
+          <div class="col-3 text-light">
+            <h1>150</h1>
+            <p>Doctors Available</p>
+          </div>
+        </div>
       </div>
-      <div class="row center">
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/laboratory.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">Special Services</span>
-                <p class="left-align">The special services ranges from Hiv/aids, family planning, non-communicable diseases</p>
-                <br>
-                <a href="/services/special-service.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/pregnant.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">Child Care</span>
-                <p class="left-align">Our Pediatrician are outstanding, providing top medical care for your kids,managing</p>
-                 <br> 
-                <a href="/services/pedetritian.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/consultant.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">Women Health</span>
-                <p class="left-align">From pregnancy through menopause, gynecologic and breast health, we ensure expert care</p>
-                 <br>
-                <a href="/services/women-health.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="center-align">
-        <a href="/services/index.html" class="btn btn-flat primary-bg white-text">view all</a>
-      </div>
-    </div>
     </section>
+
+    <hr class="space border-dark">
     
-    <!-- Contact Us Section-->
-    <section class="section grey lighten-2" id="contact">
-    <div class="container">
-      <h3 class="primary-txt">Contact Us</h3>
-      <p class="p-text-fix">Do you have questions? You are welcome to contact us. Be assured of prompt response to your concerns or inquiries.</p>
-      <br>
-      <a href="tel:+23438329637" class="btn btn-flat primary-bg white-text">Call Us Now</a>
-      <br> <br> <br>
-      <!-- Map -->
-      <hr>
-      <!-- For Small Screens -->
-      <div class="hide-on-large-only">
-        <br>
-        <a href="https://goo.gl/maps/pTQ3xzZZAwBauey96" target="_blank" style="text-decoration: underline !important;">View on Google Maps</a>
+    <!-- Medical Services -->
+    <section class="services-section">
+      <div class="container text-center">
+        <span class="text-center pb-3 primary-text"><i class="bi bi-clipboard-pulse pe-2"></i>Medical Services</span> <br>
+        <h2 class="pb-3">Find out more about <br> our medical services</h2>
+        <div class="row column-gap-3 align-items-center justify-content-center">
+          <div class="service-column col-3 pt-5 mb-4 border">
+            <i class="bi bi-clipboard-pulse text-light rounded-circle primary-bg p-4"></i>
+            <p class="pt-4 primary-text">Cardiology</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum sint culpa cumque illo?</p>
+          </div>
+          <div class="service-column col-3 pt-5 mb-4 border">
+            <i class="bi bi-clipboard-pulse text-light rounded-circle primary-bg p-4"></i>
+            <p class="pt-4 primary-text">Neurology</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum sint culpa cumque illo?</p>
+          </div>
+          <div class="service-column col-3 pt-5 mb-4 border">
+            <i class="bi bi-clipboard-pulse text-light rounded-circle primary-bg p-4"></i>
+            <p class="pt-4 primary-text">Urology</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum sint culpa cumque illo?</p>
+          </div>
+          <div class="service-column col-3 pt-5 mb-4 border">
+            <i class="bi bi-clipboard-pulse text-light rounded-circle primary-bg p-4"></i>
+            <p class="pt-4 primary-text">Pulmonary</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum sint culpa cumque illo?</p>
+          </div>
+          <div class="service-column col-3 pt-5 mb-4 border">
+            <i class="bi bi-clipboard-pulse text-light rounded-circle primary-bg p-4"></i>
+            <p class="pt-4 primary-text">Radiology</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum sint culpa cumque illo?</p>
+          </div>
+          <div class="service-column col-3 pt-5 mb-4 border">
+            <i class="bi bi-clipboard-pulse text-light rounded-circle primary-bg p-4"></i>
+            <p class="pt-4 primary-text">Hypotherapy</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum sint culpa cumque illo?</p>
+          </div>
+        </div>
       </div>
-      <div class="hide-on-med-and-down">
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.9641903372167!2d7.337297374455634!3d9.157703086962233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd9acb4dde4df%3A0xe08f37c5f0fcd9cf!2sKubwa%20General%20Hospital!5e0!3m2!1sen!2sng!4v1692657751709!5m2!1sen!2sng" width="950" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <br>
-      <hr>        
-    </div>
     </section>
+
+    <hr class="space border-dark" id="contact">
+
+    <!-- Contact Us Section-->
+    <section class="bg-light">
+      <div class="container">
+        <div class="row align-items-center py-5">
+          <div class="col-md-6">
+            <h3 class="primary-text mb-3">Contact Us</h3>
+            <p class="text-muted fs-5">
+              Do you have questions? You're welcome to contact us.
+              <br>We assure you of a prompt response to your concerns or inquiries.
+            </p>
+            <a href="tel:+23438329637" class="btn primary-btn px-4 py-2 rounded-pill shadow-sm">
+              <i class="bi bi-phone pr-2"></i> Call Us Now
+            </a>
+          </div>
+
+          <!-- Embedded Map (Large Screens) -->
+          <div class="col-md-6 d-none d-md-block">
+            <div class="ratio ratio-4x3 rounded overflow-hidden shadow">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.9641903372167!2d7.337297374455634!3d9.157703086962233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd9acb4dde4df%3A0xe08f37c5f0fcd9cf!2sKubwa%20General%20Hospital!5e0!3m2!1sen!2sng!4v1692657751709!5m2!1sen!2sng" 
+                style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- For Small Screens -->
+        <div class="d-md-none mt-4 text-center">
+          <a href="https://goo.gl/maps/pTQ3xzZZAwBauey96" target="_blank" class="text-decoration-underline text-primary fw-semibold">
+            📍 View on Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="space border-dark">
 
       <!-- Fixed Action Button -->
-  <div class="fixed-action-btn">
+  <!-- <div class="fixed-action-btn">
     <a class="btn-floating btn-large primary-bg pulse">
       <i class="large">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform:msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
@@ -386,58 +263,58 @@
       </li>
     </ul>
   </div>
-  </main>
+  </main> -->
   
   <!-- Footer -->
-  <footer class="page-footer primary-bg white-text">
+  <footer class="gradient-bg text-light pt-5">
     <div class="container">
-      <div class="row">
-        <div class="col s12 l4">
-          <img src="assets/images/logo.png" alt="logo" class="resize-img">
-            <div class="" style="line-height: 20px; padding-top: 10px;">
-              <p></p>
-                <p class="large-t">Kubwa General Hospital,</p> 
-                <p class="">Okitipupa Crescent, Gado Nasko Road, Phase 4,</p>
-                <p class="">Abuja, Nigeria</p>
-            </div>
+      <div class="row g-4">
+        <!-- Logo & Address -->
+        <div class="col-md-4">
+          <img src="assets/images/logo.png" alt="logo" width="60" height="60" class="mb-3">
+          <p class="fs-5 mb-1">Kubwa General Hospital,</p>
+          <p class="mb-1">Okitipupa Crescent, Gado Nasko Road, Phase 4,</p>
+          <p class="mb-0">Abuja, Nigeria</p>
         </div>
-        <div class="col s12 l4 push-l1">
-            <h5 class="">Quick Links</h5>
-            <a href="/index.html" class="white-text">Home</a><br>
-            <a href="#about" class="white-text">About Us</a><br>
-            <a href="#services" class="white-text">Services</a><br>
-            <a href="tel:+23438329637" class="white-text">Contact Us</a><br>
+
+        <!-- Quick Links -->
+        <div class="col-md-4">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="./index.html" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> Home</a></li>
+            <li><a href="#about" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> About Us</a></li>
+            <li><a href="#services" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> Services</a></li>
+            <li><a href="tel:+23438329637" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> Contact Us</a></li>
+          </ul>
         </div>
-        <div class="col l4 push-l1">
-          <a href="/Privacy.html" class="white-text d-block">Privacy Policy</a>
-          <a href="/Terms and Con.html" class="white-text d-block">Terms and Conditions</a>
+
+        <!-- Policies -->
+        <div class="col-md-4">
+          <h5 class="mb-3">Legal</h5>
+          <a href="/Privacy.html" class="text-light d-block text-decoration-none mb-2"><i class="bi bi-hospital pe-2"></i> Privacy Policy</a>
+          <a href="/Terms and Con.html" class="text-light d-block text-decoration-none"><i class="bi bi-hospital pe-2"></i> Terms & Conditions</a>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright black">
-      <div class="container">
-        <div class="text">
-          <p class="center-align">&copy;  <span id="currentYear">2024</span> Kubwa General Hospital. Built by <a href="https://github.com/coresystechng" target="_blank" class="take-off">🚀</a></p>
-        </div>
+
+      <hr class="my-4 border-light">
+
+      <!-- Bottom footer -->
+      <div class="text-center pb-3">
+        <p class="mb-0">
+          &copy; <span id="currentYear"></span> Kubwa General Hospital. Built by 
+          <a href="https://github.com/lome-ezehi" target="_blank" class="fw-bold lome text-decoration-none">Løme</a>
+        </p>
       </div>
     </div>
   </footer>
 
+
     
   <!-- JavaScript Below -->
-    <script src="/assets/scripts/index.js"></script>
-    <script src="assets/js/jqueryv3.4.1.js"></script>
-    <script src="assets/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function(){
-          $('.slider.desktop').slider({height: 800, interval: 4000, indicators: false});
-          $('.slider.mobile').slider({height: 300, interval: 2000, indicators: false});
-          $('.fixed-action-btn').floatingActionButton();
-          $('.fixed-action-btn').floatingActionButton();
-          $('.tooltipped').tooltip();
-          $('.materialboxed').materialbox();
-        });
-    </script>
+  <script src="/assets/scripts/index.js"></script>
+  <script src="assets/js/jqueryv3.4.1.js"></script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 </html>
 
