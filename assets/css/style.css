@@ -168,14 +168,15 @@ h2 {
 
 .service-column{
     background-color: var(--light-green);
+    transition: transform 0.3s ease;
     border-radius: 8px;
-    transition: 0.2s;
 }
 
 .service-column:hover{
     background-color: var(--white);
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
 }
 
 .lome{
@@ -184,4 +185,23 @@ h2 {
 
 .space{
     margin: 80px 0 !important;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
