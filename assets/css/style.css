@@ -9,7 +9,7 @@
     --active: #6ce09b !important;
     --accent: #D3D7DD !important;
     --white: #fff !important;
-    --light-green: #edf4ef !important;
+    --light-green: #dfffe8 !important;
 
     /* color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
@@ -167,13 +167,13 @@ h2 {
 } */
 
 .service-column{
-    background-color: var(--light-green);
+    background-color: var(--white);
     transition: transform 0.3s ease;
     border-radius: 8px;
 }
 
 .service-column:hover{
-    background-color: var(--white);
+    background-color: var(--light-green);
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);
