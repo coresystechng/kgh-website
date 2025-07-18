@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <title>Services | Kubwa General Hospital</title>
 </head>
 <body>
@@ -47,10 +48,14 @@
   </header>
     <!-- hero -->
     <div class="hero-bg d-flex flex-row justify-content-evenly">
-      <div class="justify-content-center d-flex flex-column">
+      <div class="justify-content-center d-flex flex-column"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-delay="300"
+        data-aos-easing="ease-in-sine">
         <p class="text-light pb-2"><i class="bi bi-hospital pe-2"></i>Our Services</p> 
-        <h1 class="text-light pb-2">Your health <br> and Well-Being <br> is our Top priority</h1> 
-        <p class="text-light pb-4" style="font-size: 14px;">We ensure you stay healthy, by giving you the <br> right advice and providing you with the best caretakers.</p>
+        <h1 class="text-light pb-2">Comprehensive <br> Medical Care <br> You Can Trust</h1> 
+        <p class="text-light pb-4" style="font-size: 14px;">We provide a wide range of healthcare services—from general consultations <br> to specialized treatments—delivered with compassion and expertise.</p>
         <a href="" class="btn btn-dark btn-lg w-75 fw-semibold ">Book an Appointment</a>
 
         <!-- <nav aria-label="breadcrumb">
@@ -61,19 +66,29 @@
           </ol>
         </nav> -->
       </div>
-      <div class="align-items-end text-end d-flex">
+      <div class="align-items-end text-end d-flex"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-delay="300"
+        data-aos-easing="ease-in-sine">
         <img src="../assets/images/male-nurse.png" alt="" height="500" width="480">
       </div>
     </div>
 
     <section class="py-5 bg-light">
       <div class="container">
+        <div
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-delay="300"
+        data-aos-easing="ease-in-sine">
         <h2 class="text-center primary-text mb-4">Our Services</h2>
         <p class="text-center lead mb-5">
           At Kubwa General Hospital, we are dedicated to providing safe, affordable, and accessible healthcare services 24/7, every day of the week. Explore some of the core services we offer below.
         </p>
+      </div>
 
-        <div class="row g-4">
+        <div class="row g-4" data-aos="fade-up" data-aos-delay="300">
           <!-- Ambulance -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm service-card border-0">
@@ -197,18 +212,18 @@
         <div class="col-md-4">
           <h5 class="mb-3">Quick Links</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> Home</a></li>
-            <li><a href="../index.html#about" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> About Us</a></li>
-            <li><a href="#services" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> Services</a></li>
-            <li><a href="tel:+23438329637" class="text-light text-decoration-none"><i class="bi bi-hospital pe-2"></i> Contact Us</a></li>
+            <li class="pb-2"><a href="../index.html" class="text-light text-decoration-none"><i class="bi bi-house-door-fill pe-2"></i> Home</a></li>
+            <li class="pb-2"><a href="../index.html#about" class="text-light text-decoration-none"><i class="bi bi-info-circle-fill pe-2"></i> About Us</a></li>
+            <li class="pb-2"><a href="#" class="text-light text-decoration-none"><i class="bi bi-clipboard2-pulse-fill pe-2"></i> Services</a></li>
+            <li class="pb-2"><a href="tel:+23438329637" class="text-light text-decoration-none"><i class="bi bi-envelope-fill pe-2"></i> Contact Us</a></li>
           </ul>
         </div>
 
         <!-- Policies -->
         <div class="col-md-4">
           <h5 class="mb-3">Legal</h5>
-          <a href="/Privacy.html" class="text-light d-block text-decoration-none mb-2"><i class="bi bi-hospital pe-2"></i> Privacy Policy</a>
-          <a href="/Terms and Con.html" class="text-light d-block text-decoration-none"><i class="bi bi-hospital pe-2"></i> Terms & Conditions</a>
+          <a href="/Privacy.html" class="text-light d-block text-decoration-none mb-2"><i class="bi bi-shield-lock-fill pe-2"></i> Privacy Policy</a>
+          <a href="/Terms and Con.html" class="text-light d-block text-decoration-none"><i class="bi bi-file-earmark-text-fill pe-2"></i> Terms & Conditions</a>
         </div>
       </div>
 
@@ -224,10 +239,17 @@
     </div>
   </footer>
     
-      <!-- JavaScript Below -->
-      <script src="../assets/scripts/index.js"></script>
-      <script src="../assets/js/jqueryv3.4.1.js"></script>
-      <script src="../assets/js/materialize.min.js"></script>
-      <script src="../assets/js/index.js"></script>
+    <!-- JavaScript Below -->
+    <script src="../assets/scripts/index.js"></script>
+    <script src="../assets/js/jqueryv3.4.1.js"></script>
+    <script src="../assets/js/materialize.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 </body>
 </html>
