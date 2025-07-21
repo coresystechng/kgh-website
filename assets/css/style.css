@@ -156,15 +156,16 @@ h2 {
 
 /* numbers section */
 .numbers-section{
-    padding: 40px 0;
+    padding: 90px 0;
+    margin-bottom: 85px;
     /* margin-top: 8rem; */
     background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
 }
 
 /* numbers section */
-/* .services-section{
-    padding: 0px 0;
-} */
+.services-section{
+    padding-bottom: 80px;
+}
 
 .service-column{
     background-color: var(--white);
@@ -184,7 +185,7 @@ h2 {
 }
 
 .space{
-    margin: 80px 0 !important;
+    padding-bottom: 80px !important;
 }
 
 .card-title {
@@ -204,4 +205,8 @@ h2 {
 .service-card:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
+}
+
+.py-80{
+    padding: 90px 0;
 }
