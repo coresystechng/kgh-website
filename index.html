@@ -1,443 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Kubwa General Hospital</title>
-    <link rel="stylesheet" href="assets/css/materialize.min.css">
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-    <meta name="description" content="The official website of Kubwa General Hospital, Abuja">
-    <meta name="keywords" content="General hopistal, Kubwa general, General hospital kubwa abuja, hospital, health, surgery, wellness, medicine, surgery,sickness, ilhealth, ear problems, dental health,pregnacare,pediatrics,medicated glasses,clinic,doctor,nurse,patient,ambulance,surgeon,health emergency, hospitalized, cardiology, radiology,trauma, dead, die,bedridden, wounded, morgue, radiotherapy, nuroloist,condition, covid-19, palliatuve, clinic, visits, allergy,cancer, diabetes. ">
-    <meta name="author" content="CORE-TECH, Collins Okoroafor, Sean Gbadamosi, Okpe Chinaza">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Kubwa General Hospital</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 
-    <style>
-      .rounded-edges {
-        border-radius: 0 0 35px 35px !important;
-      }
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-      .primary-bg {
-        background-color: #16425b !important;
-      }
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
-      .primary-txt {
-        color: #16425b !important;
-      }
-
-      .resize-img {
-        max-width: 15% !important;
-      }
-
-      .inline-block {
-        display: inline-block !important;
-      }
-
-      .p-m {
-        padding: 30px !important;
-      }
-
-      .p-text-fix {
-        font-size: 20px !important;
-        line-height: 0.8 em !important;
-        text-align: justify !important;
-      }
-
-      .green:hover{
-        background-color: #4caf4f8c !important;
-      }
-
-      .pink:hover{
-        background-color: #e91e6258 !important;
-      }
-
-      .orange:hover{
-        background-color:  #fb8a005c !important;
-      }
-
-      .light-blue:hover{
-        background-color: #039ae557 !important;
-      }
-
-      .tn-1:hover{
-        background-color: #fff;
-        transition: 1.5s;
-        font-size: large;
-        
-      }
-
-      @keyframes takeoff {
-      0%, 100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: .5;
-      }
-    }
-
-    a.take-off {animation: takeoff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;}
-
-    .large-t{
-      font-weight: bold;
-    }
-
-    .mb-2{
-      margin-bottom: -3px !important;
-    }
-
-    .d-block{
-      display: block;
-      margin-top: 13px;
-    }
-    </style>
+  <!-- AOS (Animate On Scroll Library) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
 </head>
 <body>
   
-  <!-- Header -->
-  <header>
-
-    <!-- Slider -->
-    <div class="slider desktop hide-on-med-and-down" id="home">
-      <ul class="slides">
-        <li>
-          <img src="assets/images/doctor-hijab.jpg" class="responsive-img">
-          <div class="caption left-align ">
-            <h3 class="inline-block grey darken-4 rounded-edges p-m">Caring for you <br> since 1992</h3>
-          </div>
-        </li>
-        <li>
-          <img src="assets/images/doctor-male.jpg" class="responsive-img">
-          <div class="caption left-align ">
-            <h3 class="inline-block white grey-text text-darken-3 rounded-edges p-m">Quality & Affordable <br> Healthcare</h3>
-          </div>
-        </li>
-        <li>
-          <img src="assets/images/nurse-female.jpg" class="responsive-img">
-          <div class="caption right-align ">
-            <h3 class="inline-block cyan darken-1 rounded-edges p-m">Trained & Qualified <br> Professionals</h3>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="slider mobile hide-on-large-only">
-      <ul class="slides">
-        <li>
-          <img src="assets/images/doctor-hijab.jpg" class="responsive-img">
-        </li>
-        <li>
-          <img src="assets/images/nurse-female.jpg" class="responsive-img">
-        </li>
-        <li>
-          <img src="assets/images/nurse-male.jpg" class="responsive-img">
-        </li>
-      </ul>
-    </div>
-
-    <!-- Welcome Section -->
-    <section class="section" id="about">
-     <div class="container">
-      <h3 class="left-align primary-txt">Providing Healthcare to all</h3>
-      <p class=" p-text-fix">Welcome to Kubwa General Hospital, where healthcare care meets cutting-edge medicine. Our mission is to provide the highest quality healthcare services to our community, ensuring the well-being and comfort of every patient who walks through our doors. With a legacy of excellence spanning 22 years, we have earned the trust of our patients and the respect of our peers in the medical field.</p>
-      <div class="row center">
-        <div class="col s12 l3 m6">
-          <div class="card hoverable rounded-edges z-depth-0 green lighten-4">
-            <div class="card-content">
-              <div class="card-image center-align">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #16425b;transform:msFilter;"><path d="M21.86 12.48 19.15 8a2 2 0 0 0-1.72-1H15V5a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v10a2 2 0 0 0 1 1.73 3.49 3.49 0 0 0 7 .27h3.1a3.48 3.48 0 0 0 6.9 0 2 2 0 0 0 2-2v-3a1.07 1.07 0 0 0-.14-.52zM6.5 19A1.5 1.5 0 1 1 8 17.5 1.5 1.5 0 0 1 6.5 19zm5.5-8h-2v2H8v-2H6V9h2V7h2v2h2zm4.5 8a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5zM15 12V9h2.43l1.8 3z"></path></svg>
-              </div>
-              <p>Equipped to care for every patient.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 l3 m6">
-          <div class="card hoverable rounded-edges z-depth-0 pink lighten-5">
-            <div class="card-content">
-              <div class="card-image center-align">
-                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 576 512"><style>svg{fill:#16425b}</style><path d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1V192c0 53 43 96 96 96s96-43 96-96V71.1l-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1V192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112V265.3c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V336c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192V71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
-              </div>
-              <p>Qualified healthcare workers at your service.</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col s12 l3 m6">
-          <div class="card hoverable rounded-edges z-depth-0 orange lighten-5">
-            <div class="card-content">
-              <div class="card-image center-align">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill:#16425b;transform: msFilter"><path d="M20 6h-3V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zM9 4h6v2H9zm7 10h-3v3h-2v-3H8v-2h3V9h2v3h3z"></path></svg>
-              </div>
-              <p> Accessible and affordable healthcare.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 l3 m6">
-          <div class="card hoverable rounded-edges z-depth-0 light-blue lighten-5">
-            <div class="card-content">
-              <div class="card-image center-align">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #16425b;transform: msFilter"><path d="M20 13.01h-7V10h1c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v4c0 1.103.897 2 2 2h1v3.01H4V18H3v4h4v-4H6v-2.99h5V18h-1v4h4v-4h-1v-2.99h5V18h-1v4h4v-4h-1v-4.99zM10 8V4h4l.002 4H10z"></path></svg>
-              </div>
-              <p>Connected to your local primary care center.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-     </div>
-    </section>
-  </header> 
- 
-  <!-- Main -->
-  <main>
-    <!-- Brief Description Section -->
-    <section class="section primary-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 l6">
-          <img src="assets/images/blur-hospital.jpg" alt="" class="responsive-img materialboxed">
-        </div>
-        <div class="col s12 l6">
-          <h4 class="white-text">Consult Our Doctors, <br> Anytime</h4>
-          <p class="p-text-fix white-text"> Whether you have questions about a troubling symptom, need to discuss treatment options, or simply seek medical advice, our dedicated team of doctors is just a click or call away.</p>
-          <div class="center-align">
-             <a href="mailto:admin@kubwageneralhospital.ng" class="btn btn-flat primary-txt white hoverable">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section" id="services">
-    <div class="container">
-      <h2 class="primary-txt">Our Services</h2>
-      <p class="p-text-fix"> Our mission is to ensure the provision of safe, quality, affordable, adequate, equitable and accessible health services to all. Kubwa General Hospital is open from Monday through Sunday, we operate round the clock on a daily basis. We offer the following services and more
-      </p>
-      <div class="row center">
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/ambulance.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">Ambulance Services</span>
-                <p class="left-align">
-                  When you need ambulance services, medical first responders, Command Center
-                </p>
-                 <br>
-                 
-                <a href="/services/emergency.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/surgery.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">General Surgery</span>
-                <p class="left-align">A wide range of surgical services including hernia repair, stomach surgery, appendectomy</p>
-                 <br> 
-                <a href="/services/surgery-service.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/dentist.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">Dental Clinic</span>
-                <p class="left-align">Our services include dental checkups, general dental treatment, crowns and bridges, dentures,</p>
-                <br>
-                <a href="/services/dental-service.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="row center">
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/laboratory.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">Special Services</span>
-                <p class="left-align">The special services ranges from Hiv/aids, family planning, non-communicable diseases</p>
-                <br>
-                <a href="/services/special-service.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/pregnant.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">Child Care</span>
-                <p class="left-align">Our Pediatrician are outstanding, providing top medical care for your kids,managing</p>
-                 <br> 
-                <a href="/services/pedetritian.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 l4">
-            <div class="card z-depth-0 grey lighten-4">
-              <div class="card-image">
-                <img src="assets/images/consultant.jpg" alt="" class="responsive-img materialboxed">
-              </div>
-              <div class="card-content">
-                <span class="card-title primary-txt">Women Health</span>
-                <p class="left-align">From pregnancy through menopause, gynecologic and breast health, we ensure expert care</p>
-                 <br>
-                <a href="/services/women-health.html" class="btn btn-flat primary-bg white-text">READ MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" fill="none" width="17px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="center-align">
-        <a href="/services/index.html" class="btn btn-flat primary-bg white-text">view all</a>
-      </div>
-    </div>
-    </section>
-    
-    <!-- Contact Us Section-->
-    <section class="section grey lighten-2" id="contact">
-    <div class="container">
-      <h3 class="primary-txt">Contact Us</h3>
-      <p class="p-text-fix">Do you have questions? You are welcome to contact us. Be assured of prompt response to your concerns or inquiries.</p>
-      <br>
-      <a href="tel:+23438329637" class="btn btn-flat primary-bg white-text">Call Us Now</a>
-      <br> <br> <br>
-      <!-- Map -->
-      <hr>
-      <!-- For Small Screens -->
-      <div class="hide-on-large-only">
-        <br>
-        <a href="https://goo.gl/maps/pTQ3xzZZAwBauey96" target="_blank" style="text-decoration: underline !important;">View on Google Maps</a>
-      </div>
-      <div class="hide-on-med-and-down">
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.9641903372167!2d7.337297374455634!3d9.157703086962233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd9acb4dde4df%3A0xe08f37c5f0fcd9cf!2sKubwa%20General%20Hospital!5e0!3m2!1sen!2sng!4v1692657751709!5m2!1sen!2sng" width="950" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <br>
-      <hr>        
-    </div>
-    </section>
-
-      <!-- Fixed Action Button -->
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large primary-bg pulse">
-      <i class="large">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform:msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
-      </i>
-    </a>
-    <ul>
-      <li>
-        <a href="#home" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Home">
-          <i class="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform: msFilter"><path d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z"></path></svg>
-          </i>
-        </a>
-      </li>
-      <li>
-        <a href="#services" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Our Services">
-          <i class="">
-            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" style="fill: #ffffff;"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-96 55.2C54 332.9 0 401.3 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-81-54-149.4-128-171.1V362c27.6 7.1 48 32.2 48 62v40c0 8.8-7.2 16-16 16H336c-8.8 0-16-7.2-16-16s7.2-16 16-16V424c0-17.7-14.3-32-32-32s-32 14.3-32 32v24c8.8 0 16 7.2 16 16s-7.2 16-16 16H256c-8.8 0-16-7.2-16-16V424c0-29.8 20.4-54.9 48-62V304.9c-6-.6-12.1-.9-18.3-.9H178.3c-6.2 0-12.3 .3-18.3 .9v65.4c23.1 6.9 40 28.3 40 53.7c0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7V311.2zM144 448a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg>
-          </i>
-        </a>
-      </li>
-      <li>
-        <a href="tel:+23438329637" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Call Us">
-          <i class="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform:msFilter"><path d="m16.793 5.793-4.5 4.5 1.414 1.414 4.5-4.5L21 10V3h-7z"></path><path d="M16.422 13.446a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.516a1 1 0 0 0-1.391-.087L3.299 5.29a.996.996 0 0 0-.291.648c-.015.25-.301 6.172 4.291 10.766 4.006 4.006 9.024 4.299 10.406 4.299.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"></path></svg>
-          </i>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:admin@kubwageneralhospital.ng" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Message Us">
-          <i class="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform:msFilter"><path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.017C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-9 8a2 2 0 1 1-2-2c.086 0 .167.015.25.025.082-.014.164-.025.25-.025A1.5 1.5 0 0 1 11 9.5c0 .086-.012.168-.025.25.01.083.025.165.025.25zm4 2a2 2 0 0 1-2-2c0-.086.015-.167.025-.25A1.592 1.592 0 0 1 13 9.5 1.5 1.5 0 0 1 14.5 8c.086 0 .168.011.25.025.083-.01.164-.025.25-.025a2 2 0 0 1 0 4z"></path></svg>
-          </i>
-        </a>
-      </li>
-    </ul>
+  <!-- Preloader -->
+  <div id="preloader">
+    <lord-icon
+      src="https://cdn.lordicon.com/wpequvda.json"
+      trigger="loop"
+      state="loop-transparency"
+      colors="primary:#16425b"
+      style="width:100px;height:100px">
+    </lord-icon>
   </div>
-  </main>
+
+  <header id="home">
+    <section>
+        <div class="hero">
+          <div class="background-lines" id="background-lines"></div>
+          <div class="container text-center text-white pt-5 mt-3" data-aos="fade-up" data-aos-delay="300">
+              <small class="text-uppercase py-5">Elevate your Businesss today</small>
+              <h1 class="display-4 py-1"><b>Enabling Digital Solutions.</b></h1>
+              <p class="lead py-1">We help businesses solve real-life issues using digital tools, creating solutions that not only thrive our client’s businesses <br> but also help them grow their finances.</p>
+              <div class="py-1">
+                  <a href="#aboutus" class="btn btn-secondary-2">Get Started</a>
+                  <a href="#contactus" class="btn btn-primary-2">Contact Us</a>
+              </div><br><br>
+              <div class="scroll-indicator pt-5 mt-5">
+                  <div class="mouse">
+                      <div class="dot-2"></div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </section><br>
+  </header>
+    
+  <nav class="navbar navbar-expand-lg py-3 fixed-top">
+      <div class="container-fluid container">
+          <div class="navbar-brand">
+              <a href="index.html">
+                  <img src="Assets/img/logo.png" class="d-none d-md-block" style="width: 150px !important;" alt="">
+              </a>
+              <a href="index.html">
+                  <img src="Assets/img/logo.png" class="d-block d-md-none text-start" style="width: 6em;" alt="">
+              </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-4 mb-md-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="clients.html">Clients</a>
+                      <li class="nav-item">
+                          <a class="nav-link" href="services.html">Services</a>
+                      </li>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contactus.html">Contact Us</a>
+                  </li>
+              </ul>
+              <div>
+                  <a href="contactus.html" class="btn btn-primary">Contact Us</a>
+              </div>
+          </div>
+      </div>
+      <!-- Underline element -->
+      <div class="nav-underline"></div>
+  </nav>
+
+  <!-- Back to top button -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg back-to-top" id="btn-back-to-top">
+      <i class="bi bi-chevron-double-up"></i>
+  </button>
   
-  <!-- Footer -->
-  <footer class="page-footer primary-bg white-text">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 l4">
-          <img src="assets/images/logo.png" alt="logo" class="resize-img">
-            <div class="" style="line-height: 20px; padding-top: 10px;">
-              <p></p>
-                <p class="large-t">Kubwa General Hospital,</p> 
-                <p class="">Okitipupa Crescent, Gado Nasko Road, Phase 4,</p>
-                <p class="">Abuja, Nigeria</p>
-            </div>
-        </div>
-        <div class="col s12 l4 push-l1">
-            <h5 class="">Quick Links</h5>
-            <a href="/index.html" class="white-text">Home</a><br>
-            <a href="#about" class="white-text">About Us</a><br>
-            <a href="#services" class="white-text">Services</a><br>
-            <a href="tel:+23438329637" class="white-text">Contact Us</a><br>
-        </div>
-        <div class="col l4 push-l1">
-          <a href="/Privacy.html" class="white-text d-block">Privacy Policy</a>
-          <a href="/Terms and Con.html" class="white-text d-block">Terms and Conditions</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright black">
+  <main>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores praesentium quasi ratione aspernatur voluptates, recusandae nihil quos! Veritatis ipsam eligendi tempora laborum, ipsa ipsum eos neque nemo natus, doloremque eveniet voluptate quos assumenda expedita dolorum fuga iure? Id aperiam sapiente modi amet repudiandae repellendus sequi dolorum aspernatur at, optio quaerat ipsam nesciunt consequuntur. Earum quia hic itaque! Eligendi itaque laboriosam quos consectetur earum voluptatem quod officia ipsam enim reiciendis id impedit iusto odio ut tempore eveniet ipsum veniam, ab neque soluta expedita delectus beatae accusantium sapiente! Itaque nulla, velit aliquid fuga officia, qui dicta blanditiis maiores enim odit error mollitia sequi perferendis. Consectetur tempora accusamus eligendi numquam sunt animi? Illo repudiandae enim voluptatibus culpa ut optio, doloremque nemo atque, nulla deleniti ad provident labore corporis similique quo ipsam molestias praesentium explicabo doloribus tempora quisquam laborum? Dolore nobis libero, quibusdam explicabo natus minima sunt consectetur? Maiores, est, rem aut tenetur ad labore delectus accusamus ratione temporibus voluptate itaque repudiandae recusandae incidunt sed laborum iusto hic a deleniti, minima qui iste distinctio asperiores pariatur sint. Doloribus, explicabo? Blanditiis optio, repudiandae eum ea illum nihil quis commodi. Eius praesentium libero doloribus eos, fugit similique fugiat iure, tenetur debitis corrupti beatae ut sunt assumenda dolores. Ipsum commodi sapiente quas nisi, nesciunt voluptatem! Dolor, illo! Ducimus magnam excepturi illum fuga, soluta aliquid nostrum quidem id repellat, nihil alias? Quam, quibusdam soluta. Molestiae et quasi eum, illo mollitia quibusdam aliquid labore. Voluptatum dicta quidem autem quia minus? Reiciendis, quidem! Vitae cupiditate obcaecati, numquam eius debitis laboriosam.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nostrum perferendis! Est vero non sit dicta deserunt recusandae, distinctio voluptates eligendi qui optio, temporibus eveniet esse perferendis fugit accusamus repellendus quam molestias sunt cupiditate saepe. Earum eos ex sunt modi nisi omnis, alias saepe voluptatem dignissimos veritatis quos doloribus impedit quia perspiciatis, tempore magnam vel magni, recusandae ab quisquam esse. Numquam debitis voluptate ducimus natus laboriosam, magni commodi soluta molestias quo ratione rem excepturi modi fuga consequuntur eaque doloribus reprehenderit velit cum voluptates. Veniam dolor vitae ut, modi reiciendis deleniti dolorem, dolores accusantium dolore necessitatibus voluptates fuga nostrum nesciunt eos rerum error architecto alias asperiores aperiam eius. Voluptatem repellendus minima suscipit saepe modi quibusdam vero cum maiores molestiae libero veritatis, quos quas. Incidunt aspernatur deleniti obcaecati nostrum? Corrupti quae culpa sequi omnis. Ipsam tempora nesciunt quidem sunt natus quas sapiente voluptatum consequatur deserunt totam porro vero quae maxime molestiae repellat animi nam optio, dicta ullam, aperiam dolore. Dolorum adipisci explicabo reprehenderit qui ipsa doloremque amet vero velit. Inventore doloribus ratione alias laborum in pariatur fuga repudiandae aspernatur necessitatibus asperiores iusto qui est deleniti eaque assumenda similique, voluptate deserunt omnis autem iure nostrum. Ad quod similique nostrum placeat assumenda dignissimos distinctio voluptatem esse adipisci in dicta quasi nam corporis fugiat veritatis doloribus quae eaque voluptatum molestias, sapiente recusandae ipsa corrupti veniam nisi? Ipsam ipsum omnis, doloribus obcaecati fugit, quia molestiae aut eius magni, officiis odio blanditiis aliquid voluptas ea repudiandae autem repellat. Sunt, delectus! Nesciunt voluptatem hic totam mollitia tempore nobis saepe corporis, magni dolor modi vel fuga perspiciatis voluptatum quas? Quas ratione minima error, sunt dolorum quos velit, similique et cum, natus temporibus! Possimus eum, quam aliquid alias id aspernatur blanditiis earum eaque odit nisi odio obcaecati sapiente iusto, consectetur quae pariatur quas, voluptas nihil dolorum labore? Iste magnam delectus vero officiis eveniet natus ratione sed, adipisci suscipit cumque veritatis iure odit voluptatem! Natus adipisci placeat molestias commodi vel! Nobis unde non voluptatibus ab dolore quod, modi nam a! Fugit assumenda tempore, quo soluta minus fugiat unde voluptas officiis ab obcaecati corporis voluptatibus error doloribus illum temporibus, repudiandae provident. Quia maiores tempora quaerat architecto alias debitis, suscipit ea sint placeat ipsam, nesciunt doloremque vero voluptas cupiditate nemo aut eos similique aliquid ut magni, quibusdam ipsa nam? Repellendus ratione dignissimos quod. Facere necessitatibus aut maiores nulla consequuntur nihil, labore culpa laborum, impedit magni alias molestias nisi ducimus, at beatae minus? Labore repellendus aliquam, iure similique doloribus fuga vitae, sint quas iusto beatae dolorem assumenda ipsa error vero alias voluptates doloremque earum aspernatur placeat provident repudiandae enim, temporibus eveniet commodi. Iusto neque consectetur aliquam dolorum praesentium, earum quis magnam dolor soluta officiis eum corporis accusantium aspernatur eos aut. Ab obcaecati tempore aspernatur ipsa officiis debitis consectetur, voluptate, eligendi ratione molestias quo sunt porro blanditiis modi eum, quasi earum possimus ipsam voluptates pariatur? Aliquam perspiciatis praesentium id facere autem quidem repellat. Aperiam quam esse possimus reiciendis similique nisi accusantium ea soluta maxime natus, libero laboriosam iste. Illo natus quia voluptatum dolorum aliquam officia repudiandae nemo obcaecati ab fugit provident aut commodi dignissimos blanditiis numquam, quos aperiam quidem eius ipsa fugiat hic quam similique. Ipsam architecto odio, sed quidem exercitationem laudantium voluptates, dignissimos quam praesentium quo suscipit impedit? Quo, nam eligendi illo voluptatibus asperiores, tempore aliquid eum odit neque minus pariatur adipisci nemo corporis. Molestiae numquam cumque eveniet corporis consequuntur temporibus odit. Dolorum iusto inventore beatae dicta minima sint ad nam numquam nostrum soluta rerum quo aut, unde quaerat. Repudiandae similique nihil, provident commodi, quia quos tempore eaque laudantium culpa harum numquam, ullam impedit officiis unde aliquam voluptatem in qui minima veniam tenetur corporis. Corrupti ullam harum nostrum explicabo, ex minus numquam architecto incidunt exercitationem aspernatur corporis. Itaque, et voluptate! Tempore repellendus praesentium quos dolores perferendis. Nisi rerum, error tempore delectus unde illo commodi facere repellat iste dignissimos. Eius voluptates optio vel dicta velit accusantium alias ipsa dolores perspiciatis voluptate laudantium non atque nisi cum, nostrum, nobis voluptas illo minima doloribus! Ducimus esse nesciunt illo. Qui a beatae doloribus eum, voluptates impedit accusamus fugiat eligendi quos repellat maiores enim laboriosam repudiandae illum quis. Cupiditate cumque aspernatur veritatis nostrum error corrupti, voluptate tempore a quisquam ex cum fugiat fugit labore quo nemo? Doloribus, magni impedit ratione optio illo ea? Soluta totam excepturi enim molestias quas reprehenderit rerum provident quisquam culpa dolorum facilis nulla non optio modi autem mollitia nemo temporibus iusto eum, distinctio nihil? Quisquam, sequi ullam quam cum quae at maxime accusamus, earum, officia nam deserunt nostrum non fuga repellendus quibusdam perspiciatis velit qui obcaecati neque quo dolore similique! Officiis soluta hic repellat voluptate, aliquam deleniti ducimus molestias consequatur eos. Provident iure quos magnam placeat reiciendis, voluptatibus esse assumenda incidunt deserunt voluptates nihil ipsam in architecto voluptatum nemo fugit cum dolores beatae dignissimos repellendus. Illum cumque sint debitis esse excepturi, voluptatem beatae commodi maxime expedita nisi, velit praesentium eius. Sed placeat natus dolorum et minus dignissimos debitis eius at earum ad dolore aperiam molestiae cupiditate harum distinctio, quos nesciunt accusamus quasi doloribus aut sapiente? Minus corrupti eveniet provident dolor perferendis aliquam libero nobis reprehenderit, ad et consequatur error nemo possimus doloremque totam expedita mollitia unde nesciunt? Molestias deserunt doloremque, perspiciatis eum voluptas illo quis non itaque nihil debitis quasi rerum sint voluptatum iure obcaecati aliquid quas consequuntur, cupiditate repellendus totam, nisi ipsa vitae. Ab sapiente sequi earum sit fugit quibusdam, similique corporis, officiis ea perspiciatis eos atque delectus tempora soluta eveniet veniam recusandae. Optio quis voluptatum hic ex soluta eligendi maiores unde qui eius labore reprehenderit, facilis officiis magni suscipit similique! Facilis reiciendis autem corporis placeat sapiente. Molestias fuga consectetur eum saepe totam, eos deserunt quod eveniet nulla! Dolores eaque est repudiandae veniam placeat dolor! Sed, delectus natus. Modi provident natus laboriosam soluta quibusdam incidunt quod suscipit ut voluptas, exercitationem ipsum debitis iure aperiam inventore architecto officia cum aliquam qui fugit corporis delectus odio. Laudantium, molestias facere! Quam, nam laborum. Illum exercitationem facilis, enim beatae neque explicabo iusto obcaecati delectus eum. Exercitationem, vel animi repellendus ullam veritatis aliquam illum quam nisi optio placeat tempore debitis obcaecati quibusdam culpa, facere veniam accusantium? Minima eveniet, unde quia modi ab laborum inventore. Nemo quod temporibus, consectetur sit odit perferendis quas adipisci! Vitae eum reiciendis harum, magnam voluptates ipsa non labore inventore maxime nemo molestias exercitationem recusandae necessitatibus possimus aspernatur et assumenda quisquam est fugiat temporibus quaerat odit atque voluptatem molestiae. Eveniet, vero pariatur soluta iure enim quos sit nostrum recusandae adipisci delectus distinctio amet odit suscipit itaque perspiciatis odio debitis error aliquam dolore esse. Perspiciatis id iure consequatur, veniam, quaerat vitae, inventore repellat dolorem odio reiciendis quod ratione nostrum quae? Quam, quidem enim? Laudantium quo esse minima obcaecati sapiente quaerat, reiciendis explicabo! Molestias blanditiis earum, modi consequatur libero quibusdam qui, nihil, nobis quas ipsa eligendi tempore in tempora officiis voluptatem sapiente natus nostrum commodi molestiae dolorum excepturi voluptates? Neque doloremque nobis voluptas tempora numquam dignissimos incidunt natus, quasi, fugiat deserunt earum ratione, nemo at quae omnis dolorem delectus. Soluta aperiam facilis aliquid perspiciatis. Nisi ad voluptas laudantium quo esse minima aperiam totam fugiat? Reiciendis odit eligendi impedit eaque enim ipsum voluptate, aliquam nobis maiores et. Natus, facere, quisquam eum dolor tempora nihil, aspernatur eveniet voluptate maiores odit harum. Aliquid, modi eveniet! Consequuntur iste, dolor dolore obcaecati ducimus praesentium ipsum expedita omnis. Amet, itaque laboriosam magnam, exercitationem sapiente placeat, ea labore enim possimus voluptate error? Cum, repellat? Alias, cumque itaque praesentium magni, sed adipisci laboriosam quidem reiciendis earum et fugiat porro ut! Placeat asperiores modi adipisci inventore omnis ipsa quis laudantium nostrum architecto numquam eum dolor sint laborum, repudiandae beatae illum minus doloremque veritatis quisquam atque quia natus hic nam. Blanditiis est eaque ab fugit, voluptatum repellat aut neque provident consectetur quae assumenda ad earum! Reiciendis atque officia porro corporis alias, numquam nesciunt omnis blanditiis voluptatibus, magni quae natus perspiciatis consequatur totam eos esse laborum veritatis illum sapiente placeat quidem debitis! Minus quia quis numquam magnam enim molestias. Aperiam autem, cupiditate eaque delectus adipisci optio natus exercitationem maiores quia ullam tenetur commodi culpa laborum quisquam nemo, nam, temporibus libero repudiandae consequatur provident asperiores ducimus vero at. At eveniet consequuntur excepturi deleniti commodi blanditiis, placeat assumenda atque quidem sit ipsa non facere quia? Sequi voluptate quibusdam magni fugiat fugit cum unde quaerat culpa autem voluptatibus? Illo ipsa, voluptates aut asperiores expedita facilis, dignissimos, doloribus ducimus neque eligendi culpa ullam reprehenderit! Mollitia eum repudiandae quo ipsam iure maiores sed odit quas tenetur, veniam voluptatum fugiat laudantium unde dolores laboriosam quaerat illum inventore ex? Necessitatibus, eveniet! Nemo molestiae voluptatem provident sapiente distinctio ea eaque beatae ipsam. Fuga labore tempora et, molestias aperiam eum numquam doloribus reiciendis eligendi laudantium inventore a facere esse facilis consectetur exercitationem. Fugiat sequi repudiandae modi incidunt soluta quos excepturi architecto quia, dolorem itaque similique autem, id commodi beatae unde molestiae corporis dignissimos dicta laboriosam impedit nisi tempore. Laudantium suscipit nihil voluptatibus esse quibusdam. Pariatur suscipit dolorum consectetur, voluptate hic repellat aliquid minus. Sint exercitationem perferendis recusandae amet. Deserunt ab, facere qui aspernatur illum asperiores perspiciatis at eligendi voluptates velit assumenda eaque dignissimos rerum et possimus provident necessitatibus commodi impedit, quam obcaecati nemo! Quibusdam adipisci sequi eum, in quis delectus labore, est ipsam, atque nostrum quidem cumque! Iusto inventore quia ratione totam. Quisquam repellendus minus laboriosam quis nulla! Fugit expedita voluptatem tempora, iure eum in dolor repudiandae placeat asperiores quas dolores qui nihil praesentium aspernatur enim? Modi libero adipisci, maxime qui cumque labore consequatur veniam error ipsa, odio rem. Ea doloremque, tenetur nihil magnam ad, aut dignissimos beatae reprehenderit praesentium laudantium consequatur ipsa esse quas? Possimus, aliquid. Velit modi autem, ex reiciendis, quasi iusto placeat voluptatem aut, perspiciatis minima dolor dignissimos at culpa eligendi! Nisi magnam molestiae reiciendis, incidunt maiores repellendus vitae ex. Qui deleniti cumque suscipit magnam. Nesciunt iusto, magnam facere, animi neque cum voluptatem et eius cupiditate debitis qui ea corporis nisi. Illum nam, fugiat in omnis eveniet itaque temporibus corporis maxime dignissimos minima saepe dolores veniam facere necessitatibus doloremque ipsam dolore! Placeat dicta totam vero. Repellendus quos aspernatur deleniti architecto, delectus quasi nam minus officiis hic quae alias amet, atque quia! Aliquam omnis, exercitationem iste magnam quos odit ipsum minus tempora dolore officia, fugit explicabo veritatis molestiae possimus error officiis cumque? Sed odio aspernatur veritatis autem modi iste, consequuntur dolorem voluptatum eveniet minima beatae ipsum voluptate nobis quisquam repellat laborum ullam dolores. Omnis atque, praesentium itaque dolorum modi ut totam dolore unde sequi recusandae eligendi laborum at voluptatem sit vero architecto autem iure repudiandae? Totam, perspiciatis? Ab minima animi cupiditate, quasi maxime facilis quaerat laudantium modi recusandae ratione, alias eaque eius voluptatem aliquam esse! Neque assumenda id magni aliquam. Tempore, asperiores? Tempore illo similique dignissimos? Iusto quos odit ex deleniti quam, magni necessitatibus explicabo ipsa sapiente suscipit culpa quae praesentium voluptate eveniet corporis voluptates blanditiis aliquid quaerat possimus commodi. Quidem, perspiciatis alias totam placeat architecto velit inventore? Eos reprehenderit ullam, molestias earum saepe impedit eius mollitia veritatis facilis nam neque vero ex qui quam quisquam libero error praesentium doloribus corporis aut voluptates et provident repellat? Ut in itaque mollitia doloribus laudantium expedita alias dignissimos error eligendi, aut officiis voluptas, cum soluta veniam inventore earum magnam. Distinctio nihil aliquid totam ullam reprehenderit autem deserunt nostrum placeat consequatur at doloremque saepe quis dicta sequi necessitatibus, ut dolorem laborum tempore aliquam voluptate, id, vel suscipit. Similique, consequuntur? Esse repudiandae debitis doloribus cum quo natus tenetur. Voluptas, ullam quaerat perferendis sint sunt non aut, suscipit perspiciatis ab facilis fugit tenetur eius ad consequatur velit reprehenderit eaque. Pariatur velit alias exercitationem maxime, architecto quam minima quibusdam ab nostrum tempore? Eaque a sapiente itaque repellendus animi quam et corrupti soluta quisquam eum in consequuntur perspiciatis neque voluptatem, aspernatur explicabo tempora ducimus amet ut. Ex quam consequatur reprehenderit aperiam! Eius, earum beatae, facere laboriosam aperiam nesciunt pariatur minus, dolorem quas autem nemo rerum. Tempore maxime possimus eligendi. Nostrum consequuntur, commodi maxime praesentium vitae nihil quaerat quod repellat similique inventore hic? Dolorum, qui commodi doloremque facere iure aut odit laudantium voluptate. Suscipit tenetur assumenda possimus exercitationem ullam! Pariatur beatae alias vel delectus unde consequuntur eius necessitatibus quibusdam, enim eligendi maxime nihil adipisci earum fugiat quo molestias laborum molestiae, officiis, eaque fuga natus asperiores culpa eum autem! Optio exercitationem id non. Perspiciatis, quae labore quod numquam harum tenetur excepturi molestiae facere consectetur delectus, nulla dolore dolores officiis molestias sunt eaque neque libero doloremque nobis rerum porro veritatis incidunt aut. Natus quod ducimus illo quaerat aliquid facilis error et nobis, deserunt sed, debitis perspiciatis ea odit veniam distinctio praesentium cumque esse omnis nihil animi repudiandae quidem dicta tempora consectetur! Vero obcaecati placeat fugiat similique aliquam laudantium minima itaque illum. Doloribus, rerum quo! Qui, vitae et voluptatum accusamus provident maiores facere facilis ab veniam consequatur assumenda quod eum nostrum earum placeat? Quaerat, iure totam, molestias cumque amet aliquam culpa odio, saepe explicabo distinctio dolorem autem ad! Deserunt, temporibus id inventore consectetur necessitatibus vero labore? Cupiditate quisquam, cumque reiciendis optio, repellendus eum, accusamus soluta corporis quidem harum odio architecto voluptate. Ad doloremque modi, laudantium minus beatae similique. Possimus, similique modi dicta ad iure distinctio quas quibusdam non vero repellendus. Praesentium doloremque officiis dignissimos, aspernatur dolore consequuntur aut cumque ratione aliquid ipsum cum delectus quia quam ex quaerat nobis ipsa illum debitis dolor! Ab a sapiente cum iure, repellendus iste eum minima dolorum, corporis recusandae non minus temporibus voluptatum corrupti voluptatem nulla iusto, tempora fugiat tempore debitis architecto reprehenderit similique quae. Suscipit at, cum cumque illum maxime molestias voluptatibus numquam vero ab explicabo laudantium deserunt, nolor eveniet amet ducimus quia velit repudiandae provident numquam similique quam ut voluptas, nisi cupiditate nostrum commodi necessitatibus aspernatur labore inventore iure natus! Nesciunt numquam, non vero illo vitae eius! Laborum ea sint libero eum quaerat, tempore consectetur. Ipsa, beatae reprehenderit? Nostrum, similique illo dicta distinctio hic quae consectetur enim tenetur quisquam voluptate sunt iure est provident ipsam suscipit consequuntur nobis omnis maiores culpa harum eaque asperiores atque repellat facilis! Velit eos assumenda ea sunt quia dolore neque dolorem aspernatur!
+    </p>
+  </main>
+  <footer>
+    <section class="footer-section">
       <div class="container">
-        <div class="text">
-          <p class="center-align">&copy;  <span id="currentYear">2024</span> Kubwa General Hospital. Built by <a href="https://github.com/coresystechng" target="_blank" class="take-off">🚀</a></p>
-        </div>
+        <div class="row gx-5 pt-4">
+            <!-- LEFT COLUMN -->
+            <div class="col-md-6 pb-3">
+                <div class="footer-title">
+                    <img src="assets/images/logo.png" style="width: 25% !important;" alt="">
+                </div>
+                <p class="footer-text">
+                    <b>Kubwa General Hospital,</b>
+                </p>
+                <p class="footer-text">
+                    Okitipupa Crescent, Gado Nasko Road, Phase 4, 
+                </p>
+                <p class="footer-text">
+                    Abuja, Nigeria.
+                </p>
+                <div class="mb-4">
+                    <a href="contactus.html" class="btn btn-primary">Contact Us Today</a>
+                </div>
+              </div>
+              
+              <!-- RIGHT COLUMN -->
+              <div class="col-md-6">
+                <div class="row">
+                  <!-- Sections -->
+                  <div class="col-sm-6 footer-nav mb-4 mb-sm-0">
+                    <h6><b>Quick Links</b></h6>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="clients.html">Contact Us</a></li>
+                    </ul>
+                    </div>
+                    <!-- Socials -->
+                    <div class="col-sm-6 footer-nav mb-4 mb-sm-0">
+                    <h6><b>Legal</b></h6>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="https://www.x.com/@coresystechng" target="_blank">Privacy Policy</a></li>
+                        <li><a href="https://www.instagram.com/coresystechng" target="_blank">Terms & Conditions</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-credit text-center pt-3">
+                &copy; Kubwa General Hospital. Built by <span><a class="ctech" href="https://github.com/coresystechng" target="_blank" rel="noopener noreferrer">CORE-TECH 🚀</a></span> 
+            </div>
+          </div>
       </div>
-    </div>
+    </section>
   </footer>
 
-    
-  <!-- JavaScript Below -->
-    <script src="/assets/scripts/index.js"></script>
-    <script src="assets/js/jqueryv3.4.1.js"></script>
-    <script src="assets/js/materialize.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        $(document).ready(function(){
-          $('.slider.desktop').slider({height: 800, interval: 4000, indicators: false});
-          $('.slider.mobile').slider({height: 300, interval: 2000, indicators: false});
-          $('.fixed-action-btn').floatingActionButton();
-          $('.fixed-action-btn').floatingActionButton();
-          $('.tooltipped').tooltip();
-          $('.materialboxed').materialbox();
+        AOS.init({
+            duration: 900,
+            once: true,
+        });
+    </script>
+
+    <!-- Back to top -->
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+
+        function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- preloader JS -->
+    <script>
+        // Minimum display time in milliseconds
+        const MIN_DISPLAY = 2500;
+        const start = Date.now();
+
+        window.addEventListener('load', () => {
+            const pre = document.getElementById('preloader');
+            const elapsed = Date.now() - start;
+            const remain = Math.max(0, MIN_DISPLAY - elapsed);
+
+            setTimeout(() => {
+            pre.classList.add('fade-out');
+            setTimeout(() => pre.remove(), 600);
+            }, remain);
+        });
+    </script>
+
+    <!-- nav anime -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        function updateActiveOnScroll() {
+        const scrollPos = window.pageYOffset;
+        let currentSectionId = "";
+
+        // Find the last section whose top is <= scroll position
+        sections.forEach(section => {
+            const offsetTop = section.offsetTop;
+            // tweak this if you have a fixed header: e.g. offsetTop - headerHeight
+            if (scrollPos >= offsetTop - 10) {
+            currentSectionId = section.id;
+            }
+        });
+        }
+    });
+    </script>
+    <!-- nav anime -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        function updateActiveOnScroll() {
+        const scrollPos = window.pageYOffset;
+        let currentSectionId = "";
+
+        // Find the last section whose top is <= scroll position
+        sections.forEach(section => {
+            const offsetTop = section.offsetTop;
+            // tweak this if you have a fixed header: e.g. offsetTop - headerHeight
+            if (scrollPos >= offsetTop - 10) {
+            currentSectionId = section.id;
+            }
+        });
+        }
+    });
+    </script>
+    <!-- hero-dissappear -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const nav  = document.querySelector('.navbar');
+            const hero = document.getElementById('home');
+
+            console.log('NAV:', nav, 'HERO:', hero);
+
+            const io = new IntersectionObserver(
+            ([entry]) => {
+                console.log('hero intersection:', entry.isIntersecting);
+                nav.classList.toggle('visible', !entry.isIntersecting);
+            },
+            { root: null, threshold: 0 }
+            );
+            io.observe(hero);
         });
     </script>
 </body>
 </html>
-
