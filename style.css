@@ -249,6 +249,28 @@ nav ul li a.active::after {
     box-shadow: 0 5px 10px rgba(0,0,0,0.1) !important;
 }
 
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #134074;
+}
+
+/* general txt */
+.txt {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+}
+
+.head {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #134074;
+    margin-bottom: 1.5rem;
+}
+
 /* scroll css */
 /* .scroll-indicator {
     display: flex;
