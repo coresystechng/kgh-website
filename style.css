@@ -10,6 +10,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
+/* back to top css */
 .back-to-top {
     position: fixed !important;
     cursor: pointer;
@@ -51,6 +52,7 @@ html, body {
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
+/* navbar css */
 nav ul li a {
     position: relative;
     text-decoration: none;
@@ -110,6 +112,187 @@ nav ul li a.active::after {
     transform: translateY(0);
 }
 
+/* hero css */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #16425B 0%, #1B6CA8 50%, #4FC3F7 100%);
+    color: #fff;
+    overflow: hidden;
+    padding-top: 2.5rem;
+}
+
+/* Text */
+.hero-text h1 {
+    font-size: clamp(1.6rem, 4.2vw, 3rem); /* responsive heading */
+    font-weight: 700;
+    line-height: 1.05;
+    margin-bottom: 0.6rem;
+    }
+    .hero-text p {
+    font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+    color: rgba(255,255,255,0.92);
+    margin-bottom: 0.9rem;
+}
+
+/* Image — responsive, doesn't overflow */
+.hero-img {
+    display: flex;
+    align-items: flex-end; /* anchor image to bottom on larger screens */
+    justify-content: center;
+    padding-top: 0.5rem;
+    /* padding-bottom: 0.5rem; */
+}
+
+.nurse-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 5px 20px rgba(0,0,0,0.35));
+    transform: translateY(0);
+    transition: transform 450ms ease, opacity 450ms ease;
+    opacity: 1;
+    bottom: 0;
+}
+
+/* Small screens: stack nicely and center everything */
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 100vh;
+        padding-top: 6rem;
+        /* padding-bottom: 2rem; */
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 2.2rem; /* smaller heading on phones */
+    }
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-ctas {
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero-ctas .btn {
+        width: 100%;
+        margin-bottom: 0.6rem;
+    }
+
+    .hero-img {
+        margin-top: 1.25rem;
+        align-items: center;
+    }
+    .nurse-img {
+        max-width: 380px; /* much smaller on phones */
+        filter: drop-shadow(0 8px 20px rgba(0,0,0,0.28));
+    }
+}
+
+/* medium screens: stack nicely and center everything */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero-section {
+        min-height: 100vh;
+        padding-top: 2rem;
+        /* padding-bottom: 2rem; */
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-top: -400px !important;
+    }
+
+    .hero-ctas {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .hero-ctas .btn {
+        width: 50%;
+        margin-bottom: 0.6rem;
+    }
+
+    .hero-img {
+        margin-top: 1.25rem;
+        align-items: center;
+    }
+    .nurse-img {
+        max-width: 500px; /* much smaller on phones */
+        filter: drop-shadow(0 8px 20px rgba(0,0,0,0.28));
+    }
+}
+
+/* Large screens: give image a slight lift */
+@media (min-width: 992px) {
+    .hero-text {
+        margin-top: -8%;
+    }
+
+    .nurse-img {
+        transform: translateY(6px);
+    }
+}
+
+/* card css */
+.card {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1) !important;
+}
+
+/* scroll css */
+/* .scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mouse {
+    width: 36px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 18px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.dot-2 {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+    0% {
+    opacity: 1;
+    top: 12px;
+    }
+    50% {
+    opacity: 0.5;
+    top: 28px;
+    }
+    100% {
+    opacity: 0;
+    top: 40px;
+    }
+} */
+
+/* footer css */
 .footer-section {
     background-color: #000;
     color: #fff;
@@ -159,6 +342,7 @@ nav ul li a.active::after {
     color: #fff;
 }
 
+/* btn css */
 .btn-primary {
     background-color: #fff !important;
     border: 1px #16425B solid !important;
@@ -170,6 +354,34 @@ nav ul li a.active::after {
     color: #fff !important;
     border: 1px #16425B solid !important;
     background-color: #16425B !important;
+}
+
+.btn-tertiary {
+    background-color: transparent;
+    border: 1px #fff solid !important;
+    color: #fff !important;
+    padding: .8em 1.2em .8em 1.2em;
+    font-size: 1.2em;
+}
+
+.btn-tertiary:hover {
+    color: #16425B !important;
+    border: 1px #fff solid !important;
+    background-color: #fff !important;
+}
+
+.btn-tertiary-2 {
+    background-color: #fff;
+    border: 1px #fff solid !important;
+    color: #16425B !important;
+    padding: .8em 1.2em .8em 1.2em;
+    font-size: 1.2em;
+}
+
+.btn-tertiary-2:hover {
+    color: #fff !important;
+    border: 1px #fff solid !important;
+    background-color: transparent !important;
 }
 
 .btn-secondary {
