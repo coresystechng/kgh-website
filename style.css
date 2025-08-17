@@ -56,27 +56,34 @@ nav ul li a {
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 18px !important;
-    font-weight: 800 !important;
-    font-family: cera_light;
+    font-weight: 600 !important;
+}
+
+.nav-link:hover {
+    color: #16425B !important;
+}
+
+.active {
+    color: #16425B !important;
 }
 
 nav ul li a::after {
     content: '';
     position: absolute;
-    left: 9px;
+    left: 6px;
     bottom: 6px;
     width: 0;
-    height: 2.6px;
+    height: 3.5px;
     background-color: #134074; 
     transition: width 0.3s ease;
 }
 
 nav ul li a:hover::after {
-    width: 35px;
+    width: 40px;
 }
 
 nav ul li a.active::after {
-    width: 35px;
+    width: 40px;
 }
 
 .navbar {
@@ -153,30 +160,29 @@ nav ul li a.active::after {
 }
 
 .btn-primary {
-    background-color: #16425B !important;
+    background-color: #fff !important;
     border: 1px #16425B solid !important;
-    padding: .6em 1.6em .6em 1.6em;
-    color: #fff !important;
+    color: #16425B !important;
+    padding: .8em 2em .8em 2em;
 }
 
 .btn-primary:hover {
-    color: #16425B !important;
-    border: 1px #fff solid !important;
-    background-color: #fff !important;
+    color: #fff !important;
+    border: 1px #16425B solid !important;
+    background-color: #16425B !important;
 }
 
 .btn-secondary {
-    background-color: #134074 !important;
-    border: 1px #134074 solid !important;
+    background-color: #16425B !important;
+    border: 1px #16425B solid !important;
     color: #fff !important;
-    border: 1px #fff solid !important;
     padding: .8em 2em .8em 2em;
 }
 
 .btn-secondary:hover {
-    color: #134074 !important;
+    color: #16425B !important;
     background-color: #fff !important;
-    border: 1px #134074 solid !important;
+    border: 1px #16425B solid !important;
 }
 
 .ctech {
