@@ -3,101 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/materialize.min.css">
-    <title>Document</title>
-    <style>
-        .rounded-edges {
-          border-radius: 0 0 35px 35px !important;
-        }
-  
-        .primary-bg {
-          background-color: #16425b !important;
-        }
-  
-        .primary-txt {
-          color: #16425b !important;
-        }
-  
-        .resize-img {
-          max-width: 15% !important;
-        }
-  
-        .inline-block {
-          display: inline-block !important;
-        }
-  
-        .p-m {
-          padding: 30px !important;
-        }
-  
-        .p-text-fix {
-          font-size: 20px !important;
-          line-height: 0.8 em !important;
-          text-align: justify !important;
-        }
-  
-        .green:hover{
-          background-color: #4caf4f8c !important;
-        }
-  
-        .pink:hover{
-          background-color: #e91e6258 !important;
-        }
-  
-        .orange:hover{
-          background-color:  #fb8a005c !important;
-        }
-  
-        .light-blue:hover{
-          background-color: #039ae557 !important;
-        }
-  
-        .tn-1:hover{
-          background-color: #fff;
-          transition: 1.5s;
-          font-size: large;
-          
-        }
-  
-        @keyframes takeoff {
-        0%, 100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: .5;
-        }
-      }
-  
-      a.take-off {
-        animation: takeoff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    }
-  
-      .large-t{
-        font-weight: bold;
-      }
-  
-      .mb-2{
-        margin-bottom: -3px !important;
-      }
-  
-      .d-block{
-        display: block;
-        margin-top: 13px;
-      }
+    <title>Home | Kubwa General Hospital</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 
-      p {
-        font-size: 18px;
-        line-height: 2rem;
-      }
-      </style>
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- AOS (Animate On Scroll Library) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
-    <main>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <lord-icon
+        src="https://cdn.lordicon.com/wpequvda.json"
+        trigger="loop"
+        state="loop-transparency"
+        colors="primary:#16425b"
+        style="width:100px;height:100px">
+        </lord-icon>
+    </div>
 
-        <div class="container">
+    <header id="home">
+        <section>
+            <div class="hero">
+
+                <!--  -->
+        
+            </div>
+        </section><br>
+    </header>
+        
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+        <div class="container-fluid container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" style="width: 45px !important;" alt="">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-4 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clients.html">Clients</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="contactus.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- Underline element -->
+        <div class="nav-underline"></div>
+    </nav>
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-danger btn-floating btn-lg back-to-top" id="btn-back-to-top">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
+    
+    <main>
+        
+        <div class="container"><br><br>
             <h2 class="primary-txt">Privacy Policy</h2>
             <p class="">
-                This Privacy Policy describes how Kubwagh website ("we," "us," or "our") collects, uses, and shares information when you use our website [Kghwebsite.com] (the <a class="purple-text" style="text-decoration: underline;" href="/index.html">kgh website</a>).
+                This Privacy Policy describes how Kubwa General Hospital website ("we," "us," or "our") collects, uses, and shares information when you use our website [Kghwebsite.com] (the <a class="purple-text" style="text-decoration: underline;" href="/index.html">kgh website</a>).
             </p>
             <p>
                 Information We Collect
@@ -139,89 +131,184 @@
                 <p>
                 Contact Us
                 If you have any questions about this Privacy Policy, please contact us at <a href="mailto:admin@kubwageneralhospital.ng" class="purple-text">admin@kubwageneralhospital.ng</a>.
-            </p>
+            </p><br><br>
         </div>
+
     </main>
 
-    <div class="fixed-action-btn">
-      <a class="btn-floating btn-large primary-bg pulse">
-        <i class="large">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform:msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
-        </i>
-      </a>
-      <ul>
-        <li>
-          <a href="/index.html" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Home">
-            <i class="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform: msFilter"><path d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z"></path></svg>
-            </i>
-          </a>
-        </li>
-        <li>
-          <a href="/index.html#services" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Our Services">
-            <i class="">
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" style="fill: #ffffff;"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-96 55.2C54 332.9 0 401.3 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-81-54-149.4-128-171.1V362c27.6 7.1 48 32.2 48 62v40c0 8.8-7.2 16-16 16H336c-8.8 0-16-7.2-16-16s7.2-16 16-16V424c0-17.7-14.3-32-32-32s-32 14.3-32 32v24c8.8 0 16 7.2 16 16s-7.2 16-16 16H256c-8.8 0-16-7.2-16-16V424c0-29.8 20.4-54.9 48-62V304.9c-6-.6-12.1-.9-18.3-.9H178.3c-6.2 0-12.3 .3-18.3 .9v65.4c23.1 6.9 40 28.3 40 53.7c0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7V311.2zM144 448a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg>
-            </i>
-          </a>
-        </li>
-        <li>
-          <a href="tel:+23438329637" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Call Us">
-            <i class="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform:msFilter"><path d="m16.793 5.793-4.5 4.5 1.414 1.414 4.5-4.5L21 10V3h-7z"></path><path d="M16.422 13.446a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.516a1 1 0 0 0-1.391-.087L3.299 5.29a.996.996 0 0 0-.291.648c-.015.25-.301 6.172 4.291 10.766 4.006 4.006 9.024 4.299 10.406 4.299.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"></path></svg>
-            </i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:admin@kubwageneralhospital.ng" class="btn-floating primary-bg tooltipped" data-position="left" data-tooltip="Message Us">
-            <i class="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform:msFilter"><path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.017C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-9 8a2 2 0 1 1-2-2c.086 0 .167.015.25.025.082-.014.164-.025.25-.025A1.5 1.5 0 0 1 11 9.5c0 .086-.012.168-.025.25.01.083.025.165.025.25zm4 2a2 2 0 0 1-2-2c0-.086.015-.167.025-.25A1.592 1.592 0 0 1 13 9.5 1.5 1.5 0 0 1 14.5 8c.086 0 .168.011.25.025.083-.01.164-.025.25-.025a2 2 0 0 1 0 4z"></path></svg>
-            </i>
-          </a>
-        </li>
-      </ul>
-    </div>
-        <!-- Footer -->
-        <footer class="page-footer primary-bg white-text">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 l4">
-          <img src="assets/images/logo.png" alt="logo" class="resize-img">
-            <div class="" style="line-height: 20px; padding-top: 10px;">
-              <p></p>
-                <p class="large-t">Kubwa General Hospital,</p> 
-                <p class="">Okitipupa Crescent, Gado Nasko Road, Phase 4,</p>
-                <p class="">Abuja, Nigeria</p>
+    <footer>
+        <section class="footer-section">
+            <div class="container">
+                <div class="row gx-5 pt-4">
+                    <!-- LEFT COLUMN -->
+                    <div class="col-md-6 pb-3">
+                        <div class="footer-title mb-4">
+                            <img src="assets/images/logo.png" style="width: 65px !important;" alt="">
+                        </div>
+                        <p class="footer-text">
+                            <b>Kubwa General Hospital,</b>
+                        </p>
+                        <p class="footer-text">
+                            Okitipupa Crescent, Gado Nasko Road, Phase 4, 
+                        </p>
+                        <p class="footer-text">
+                            Abuja, Nigeria.
+                        </p>
+                        <div class="mb-4">
+                            <a href="contactus.html" class="btn btn-primary">Contact Us Today</a>
+                        </div>
+                    </div>
+                    
+                    <!-- RIGHT COLUMN -->
+                    <div class="col-md-6">
+                        <div class="row">
+                        <!-- Sections -->
+                        <div class="col-sm-6 footer-nav mb-4 mb-sm-0">
+                            <h6><b>Quick Links</b></h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="clients.html">Contact Us</a></li>
+                            </ul>
+                            </div>
+                            <!-- Socials -->
+                            <div class="col-sm-6 footer-nav mb-4 mb-sm-0">
+                            <h6><b>Legal</b></h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="Privacy.html" target="_blank">Privacy Policy</a></li>
+                                <li><a href="Terms and Con.html" target="_blank">Terms & Conditions</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="footer-credit text-center pt-3">
+                        &copy; Kubwa General Hospital. Built by <span><a class="ctech" href="https://github.com/coresystechng" target="_blank" rel="noopener noreferrer">CORE-TECH 🚀</a></span> 
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col s12 l4 push-l1">
-            <h5 class="">Quick Links</h5>
-            <a href="/index.html" class="white-text">Home</a><br>
-            <a href="/index.html#about" class="white-text">About Us</a><br>
-            <a href="/index.html#services" class="white-text">Services</a><br>
-            <a href="tel:+23438329637" class="white-text">Contact Us</a><br>
-        </div>
-        <div class="col l4 push-l1" style="line-height: 6px;">
-          <a href="/Privacy.html" class="white-text d-block">Privacy Policy</a><br>
-          <a href="/Terms and Con.html" class="white-text d-block">Terms and Conditions</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright black">
-      <div class="container">
-        <div class="text">
-          <p class="center-align">&copy;  <span id="currentYear">2024</span> Kubwa General Hospital. Built by <a href="https://github.com/coresystechng" target="_blank" class="take-off">🚀</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+        </section>
+    </footer>
 
-    <!-- JavaScript Below -->
-    <script src="assets/js/jqueryv3.4.1.js"></script>
-    <script src="assets/js/materialize.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        $(document).ready(function(){
-          $('.fixed-action-btn').floatingActionButton();
-          $('.tooltipped').tooltip();
+        AOS.init({
+            duration: 900,
+            once: true,
+        });
+    </script>
+
+    <!-- Back to top -->
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+
+        function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- preloader JS -->
+    <script>
+        // Minimum display time in milliseconds
+        const MIN_DISPLAY = 1500;
+        const start = Date.now();
+
+        window.addEventListener('load', () => {
+            const pre = document.getElementById('preloader');
+            const elapsed = Date.now() - start;
+            const remain = Math.max(0, MIN_DISPLAY - elapsed);
+
+            setTimeout(() => {
+            pre.classList.add('fade-out');
+            setTimeout(() => pre.remove(), 600);
+            }, remain);
+        });
+    </script>
+
+    <!-- nav anime -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        function updateActiveOnScroll() {
+        const scrollPos = window.pageYOffset;
+        let currentSectionId = "";
+
+        // Find the last section whose top is <= scroll position
+        sections.forEach(section => {
+            const offsetTop = section.offsetTop;
+            // tweak this if you have a fixed header: e.g. offsetTop - headerHeight
+            if (scrollPos >= offsetTop - 10) {
+            currentSectionId = section.id;
+            }
+        });
+        }
+    });
+    </script>
+    <!-- nav anime -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        function updateActiveOnScroll() {
+        const scrollPos = window.pageYOffset;
+        let currentSectionId = "";
+
+        // Find the last section whose top is <= scroll position
+        sections.forEach(section => {
+            const offsetTop = section.offsetTop;
+            // tweak this if you have a fixed header: e.g. offsetTop - headerHeight
+            if (scrollPos >= offsetTop - 10) {
+            currentSectionId = section.id;
+            }
+        });
+        }
+    });
+    </script>
+    <!-- hero-dissappear -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const nav  = document.querySelector('.navbar');
+            const hero = document.getElementById('home');
+
+            console.log('NAV:', nav, 'HERO:', hero);
+
+            const io = new IntersectionObserver(
+            ([entry]) => {
+                console.log('hero intersection:', entry.isIntersecting);
+                nav.classList.toggle('visible', !entry.isIntersecting);
+            },
+            { root: null, threshold: 0 }
+            );
+            io.observe(hero);
         });
     </script>
 </body>
