@@ -265,6 +265,11 @@ nav ul li a.active::after {
     color: #134074;
 }
 
+.shallow:hover {
+    background-color: #E0E0E0;
+    border: #134074 1px solid;
+}
+
 /* general txt */
 .txt {
     font-size: 1.2rem;
@@ -307,71 +312,55 @@ nav ul li a.active::after {
     color: #fff;
 }
 
-/* form css */
-.form-wrapper {
-    max-width: 1000px;
-    margin: 60px auto;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 40px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
-}
-
+/* contact css */
 .cta-section {
-  background: linear-gradient(135deg, #2563eb, #1e40af); /* Blue gradient */
-  color: #fff;
-  text-align: center;
-  padding: 60px 20px;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 40px auto;
+    background: #E0E0E0;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border: #134074 1px solid;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .cta-section h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #134074;
 }
 
 .cta-section p {
-  font-size: 1rem;
-  opacity: 0.9;
-  margin-bottom: 24px;
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 24px;
+    color: #000;
 }
 
 .cta-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.btn-primary {
-  background: #fff;
-  color: #2563eb;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s;
-}
-
-.btn-primary:hover {
-  background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .emergency {
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #134074 !important;
+}
+
+.emergency:hover {
+    text-decoration: underline !important;
 }
 
 .emergency i {
-  color: #fff;
+    font-size: 1.3rem;
 }
-
 
 /* scroll css */
 /* .scroll-indicator {
