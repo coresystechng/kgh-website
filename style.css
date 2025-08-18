@@ -22,6 +22,16 @@ html, body {
     background-color: #16425B;
 }
 
+.back-to-top:hover {
+    cursor: pointer;
+    /* pull it above everything else */
+    z-index: 99 !important;   
+    /* add a little shadow so it floats */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border: none;
+    background-color: #1B6BA6 !important;
+}
+
 #btn-back-to-top {
     position: fixed;
     bottom: 20px;
@@ -117,7 +127,7 @@ nav ul li a.active::after {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #16425B 0%, #1B6CA8 50%, #4FC3F7 100%);
+    background: linear-gradient(135deg, #16425B 0%, #1B6CA8 50%, #0d82b8 100%);
     color: #fff;
     overflow: hidden;
     padding-top: 2.5rem;
@@ -270,6 +280,98 @@ nav ul li a.active::after {
     color: #134074;
     margin-bottom: 1.5rem;
 }
+
+.txt-2 {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: justify;
+}
+
+.head-2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.icon-gap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* bg css */
+.stats {
+    background: linear-gradient(135deg, #16425B 0%, #1B6CA8 50%, #0d82b8 100%);
+    color: #fff;
+}
+
+/* form css */
+.form-wrapper {
+    max-width: 1000px;
+    margin: 60px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #2563eb, #1e40af); /* Blue gradient */
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.cta-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cta-section p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #fff;
+  color: #2563eb;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #f3f4f6;
+}
+
+.emergency {
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.emergency i {
+  color: #fff;
+}
+
 
 /* scroll css */
 /* .scroll-indicator {
