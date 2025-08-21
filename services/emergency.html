@@ -5,93 +5,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Kubwa General Hospital</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
 
     <!-- css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
 
     <!-- icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- AOS (Animate On Scroll Library) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+      :root{
+      --brand: #3EDBF0; /* mint blue accent - change if needed */
+      --hero-height: 100vh;
+      --overlay-dark: rgba(0,0,0,0.52);
+      --overlay-soft: rgba(255,255,255,0.02);
+      --bg-img: url('/assets/images/ambulance.jpg'); /* replace */
+    }
+
+    /* Hero layout */
+    .hero {
+      position: relative;
+      min-height: var(--hero-height);
+      display: grid;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+      background-image: var(--bg-img);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* overlay with blur */
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, var(--overlay-dark), rgba(0,0,0,0.48));
+      /* blur the background where supported */
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      z-index: 0;
+    }
+
+    /* subtle frosted panel behind CTAs (optional) */
+    .hero .hero-panel {
+      position: relative;
+      z-index: 2;
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+    }
+
+    /* text styles */
+    .hero h1 {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+    .hero p.lead {
+      /* max-width: 52ch; */
+      text-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    }
+
+    .btn-accent {
+      background: linear-gradient(90deg, var(--brand), #2ecfd6 70%);
+      color: #042028;
+      border: none;
+      box-shadow: 0 8px 20px rgba(62,219,240,0.12);
+    }
+    .btn-accent:focus, .btn-accent:hover { filter: brightness(.95); }
+
+    /* responsive padding and alignment */
+    .hero .container { padding-top: 3.2rem; padding-bottom: 3.2rem; }
+    @media (min-width: 992px) {
+      .hero .container { padding-top: 5rem; padding-bottom: 5rem; }
+    }
+
+    /* small helper for phone CTA icon spacing */
+    .icon-sm { width: 1.1rem; height: 1.1rem; display:inline-block; vertical-align:-0.15em; }
+
+    /* optional wave divider */
+    .hero .wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      opacity: 0.9;
+    }
+
+    </style>
     
 </head>
 <body>
-      <!-- Header Section -->
-      <header>
-        <div class="slider">
-          <ul class="slides">
-            <li class="">
-              <img src="/assets/images/ambulance.jpg" alt="" class="responsive-img">
-              <div class="caption right-align ">
-                <h3 class="inline-block white darken-1 rounded-edges p-m blue-grey-text">Ambulance Services</h3>
-              </div>    
-            </li>
-          </ul>
-        </div>
-      </header>
+  <!-- HERO -->
+  <header class="hero" role="banner" aria-label="Dental clinic hero section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-md-12 hero-panel text-center text-lg-start">
+          <p class="mb-2 small text-uppercase" style="letter-spacing:0.14em; color: rgba(255,255,255,0.85)">Kubwa General Hospital — Ambulance Services</p>
 
-      <main style="margin: 1% 10% 1% 10%;">
-        <div class="">
-            <p class="">During this diffcult time when we see our relative or friend etc taking damage, losing blood or having injuries, both patient and relatives are anything but tranquil we assure you that we have qualified personnels that will help keep you and and you sick or wounded relative as calm as possible, we are well aware that the life of the patients are in our hand we will we will not want any harm to come our patient rather we will do our best to rapidly get our patients cared for. Our A $ E department are well aware that there quick and rapid response can save lifes we asure you that your friends, faimly or wards are in good hands.</p>
-        </div>
-        <div class="row">
-          <div class="col l6 m6 s12 my-1">
-            <img src="/assets/images/acc1.avif" alt="" class="responsive-img materialboxed">
+          <h1 class="display-5 mb-3">
+            AMBULANCE SERVICES
+          </h1>
+
+          <p class="lead text-white-75 mb-4">
+            “From swift emergency response and safe patient transport to advanced life support and urgent medical care — trained paramedics, modern ambulances, and compassionate service. Call for immediate assistance anytime.”
+          </p>
+
+          <div class="hero-ctas mt-3">
+              <!-- <a href="#appointment" class="btn btn-tertiary me-md-2">Book Appointment</a> -->
+              <a href="tel:+2347046900529" class="btn btn-tertiary-2"><i class="bi bi-telephone"></i> Call +234 704 690 0529</a>
           </div>
-          <div class="col l6 m6 s12">
-            <img src="/assets/images/acc2.avif" alt="" class="responsive-img materialboxed">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col l6 m6 my-1">
-            <img src="/assets/images/acc3.avif" alt="" class="responsive-img materialboxed">
-          </div>
-          <div class="col l6 m6">
-            <img src="/assets/images/acc4.avif" alt="" class="responsive-img materialboxed">
-          </div>
-        </div>
-        </div>
-        <div class="row">
-          <div class="col l6 m6 my-1">
-            <img src="/assets/images/acc.jpg" alt="" class="responsive-img materialboxed">
-          </div>
-          <div class="col l6 m6">
-            <img src="/assets/images/acc6.avif" alt="" class="responsive-img materialboxed">
+
+          <!-- optional small trust row -->
+          <div class="d-flex gap-3 align-items-center mt-4 justify-content-center justify-content-lg-start small">
+            <span>🕒 Mon–Fri: 08:00–17:00</span>
+            <span>•</span>
+            <span>Emergency care</span>
+            <span>•</span>
+            <span>First responders</span>
           </div>
         </div>
-        <h4 class="" style="color: #16425b !important;">Other Services Provided</h4>
-           <a href="surgery-service.html" class="black-text hover">Surgery-Service
+
+        <!-- optional right-side image / illustration for large screens -->
+        <div class="col-lg-5 d-none d-lg-block text-end">
+          <!-- You can place a small illustration or dentist portrait here -->
+          <img src="https://images.unsplash.com/photo-1588774069154-2d9f3c8f8f2f?auto=format&fit=crop&w=800&q=80"
+              alt="Dentist at work" class="img-fluid rounded shadow-lg" style="max-height:360px; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+
+    <!-- decorative wave if you like (optional) -->
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 40 C360 0 1080 80 1440 40 L1440 80 L0 80 Z" fill="rgba(0,0,0,0.06)"/>
+    </svg>
+  </header>
+
+  <!--Main Section  -->
+    <main class="container my-5">
+      <div class="row text-center">
+        <div class="my-4" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="head">Ambulance Services</h1>
+            <p class="txt">During moments of crisis, when a loved one is injured, losing blood, or in severe distress, we understand how overwhelming and stressful it can be for both patients and their families. At such critical times, our priority is not only the rapid treatment of the patient but also providing reassurance and calm to relatives. Our team of highly qualified professionals is trained to handle emergencies with speed, precision, and compassion. We recognize the immense responsibility that comes with safeguarding lives, and we are committed to ensuring that every patient receives immediate and expert care. <br>
+
+            The Accident & Emergency (A&E) department is equipped for quick response and life-saving intervention. You can rest assured that your friends, family, or loved ones are in safe and capable hands with us.</p>
+        </div>
+        <!-- cards -->
+        <!-- <div class="col-md-6 col-lg-3 mb-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="card shallow shadow-sm rounded-4 border-1" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title d-flex flex-column align-items-center gap-2">
+                        <i class="bi bi-file-earmark-medical-fill fs-1"></i>
+                        <div class="feature-title fw-semibold">Experienced Dentists</div>
+                    </h5>
+                    <p class="feature-desc mt-3">Modern medical tools, equipment and facilities, ready to provide fast, reliable care for every patient.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="card shallow shadow-sm rounded-4 border-1" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title d-flex flex-column align-items-center gap-2">
+                        <i class="fa fa-heartbeat fa-2x pt-2" aria-hidden="true"></i>
+                        <div class="feature-title fw-semibold">Advanced Treatment</div>
+                    </h5>
+                    <p class="feature-desc mt-3">Qualified healthcare professionals dedicated to delivering the best care when you need it most.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="card shallow shadow-sm rounded-4 border-1" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title d-flex flex-column align-items-center gap-2">
+                        <i class="bi bi-emoji-smile-fill fs-1"></i>
+                        <div class="feature-title fw-semibold">Guaranteed Results</div>
+                    </h5>
+                    <p class="feature-desc mt-3">Accessible and affordable healthcare designed for improved health, comfort, and total well-being.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="card shallow shadow-sm rounded-4 border-1" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title d-flex flex-column align-items-center gap-2">
+                        <i class="bi bi-buildings-fill fs-1"></i>
+                        <div class="feature-title fw-semibold">Modern Equipment</div>
+                    </h5>
+                    <p class="feature-desc mt-3">Direct access to your community’s local primary care center for consistent medical assistance.</p>
+                </div>
+            </div>
+        </div> -->
+        <div data-aos="fade-up" data-aos-delay="100">
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <img src="/assets/images/acc1.avif" width="100%" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <img src="/assets/images/acc2.avif" width="100%" alt="">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <img src="/assets/images/acc3.avif" width="100%" alt="" >
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <img src="/assets/images/acc4.avif" width="100%" alt="">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <img src="/assets/images/acc5.avif" width="100%" alt="" >
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <img src="/assets/images/acc6.avif" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4" data-aos="fade-right" data-aos-delay="100">
+      <h4 class="">Other Services Provided</h4>
+          <a href="dental-service.html" class="black-text hover">Dental Services
             <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg>
-           </a><br>
-            <a href="dental-service.html" class="black-text hover">Dental-Services
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-            </a><br>
-            <a href="special-service.html" class="black-text hover">Special-Service
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-            </a><br>
-            <a href="pedetritian.html" class="black-text hover">pedetritian services
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-            </a><br>
-            <a href="women-health.html" class="black-text hover">Women-Health
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-            </a>
-      </main>
-
-      <footer>
+          </a><br>
+          <a href="surgery-service.html" class="black-text hover">Surgery Services
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+          </a>
+          <br>
+          <a href="special-service.html" class="black-text hover">Special Services
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+          </a><br>
+          <a href="pedeatrician.html" class="black-text hover">Pediatrician Services
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+          </a><br>
+          <a href="women-health.html" class="black-text hover">Women Health 
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+          </a>          
+    </div>
+    </main>
+    <!-- Footer Section -->
+    <footer>
         <section class="footer-section">
             <div class="container">
                 <div class="row gx-5 pt-4">
@@ -121,10 +291,10 @@
                         <div class="col-sm-6 footer-nav mb-4 mb-sm-0">
                             <h6><b>Quick Links</b></h6>
                             <ul class="list-unstyled mb-0">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="/index.html">Home</a></li>
                                 <li><a href="aboutus.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
-                                <li><a href="clients.html">Contact Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                             </div>
                             <!-- Socials -->
