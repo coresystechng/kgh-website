@@ -9,7 +9,7 @@
 
     <!-- css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -20,21 +20,50 @@
     
 </head>
 <body>
-      <!-- Header Section -->
-      <header>
-        <div class="slider">
-          <ul class="slides">
-            <li class="">
-              <img src="/assets/images/consultant.jpg" alt="" class="responsive-img">
-              <div class="caption left-align ">
-                <h3 class="inline-block white grey-text text-darken-3 rounded-edges p-m">Women Health</h3>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </header>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <lord-icon
+        src="https://cdn.lordicon.com/wpequvda.json"
+        trigger="loop"
+        state="loop-transparency"
+        colors="primary:#16425b"
+        style="width:100px;height:100px">
+        </lord-icon>
+    </div>
 
-      <nav class="navbar navbar-expand-lg py-3 fixed-top">
+    <header id="home">
+        <section class="hero-section container-fluid">
+            <div class="container sticky" style="align-self:flex-end;">
+                <div class="row align-items-center">
+                    <!-- Left side text -->
+                    <div class="col-md-12 col-lg-6 hero-text">
+                        <h1 class="pb-3">Your health and <span style="display: inline-block;">Well-Being</span> is our <br> Top priority!</h1>
+                        <p class="pb-2">We ensure you stay healthy by offering expert medical advice and providing the best care professionals.</p>
+
+                        <div class="hero-ctas d-flex gap-2 mt-3">
+                            <a href="#services" class="btn btn-tertiary me-md-2">Explore Services</a>
+                            <a href="#services" class="btn btn-tertiary-2">Book An Appointment</a>
+                        </div>
+                        <!-- scroll animation -->
+                        <!-- <div class="scroll-indicator mt-5">
+                            <div class="mouse">
+                                <div class="dot-2"></div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <!-- Right side nurse image -->
+                    <div class="col-md-12 col-lg-6 hero-img">
+                        <!-- keep alt text descriptive; this sample uses a local path -->
+                        <img src="assets/images/female-nurse.png" alt="Nurse illustration" class="nurse-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+        
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
         <div class="container-fluid container">
             <div class="navbar-brand">
                 <a href="index.html">
@@ -68,76 +97,56 @@
         <div class="nav-underline"></div>
     </nav>
 
-      <main style="margin: 1% 10% 1% 10%;">
-        <div class="">
-          <p class="">From pregnancy through till menopause, gynecology and breast health, we ensure expert care at kubwa general hospital, we specialize in providing high-quality care to women using a personalised approach, offering compassionate care. We use the latest diagnostic imaging technology to detect breast cancer and other breast abnormalities in their earliest and most treatable stages.
-            Our breast services include but not limited to
-            Breast ultrasounds
-            Cyst aspiration
-            Digital mammography
-            Minimally invasive breast biopsies.</p>
-        </div>
-        <div class="row">
-          <div class="col l6 m6 s12 my-1">
-            <img src="/assets/images/gyn1.avif" alt="" class="responsive-img materialboxed">
-          </div>
-          <div class="col l6 m6 s12">
-            <img src="/assets/images/gyn2.avif" alt="" class="responsive-img materialboxed">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col l6 m6 s12 my-1">
-            <img src="/assets/images/gyn3.avif" alt="" class="responsive-img materialboxed">
-          </div>
-          <div class="col l6 m6 s12">
-            <img src="/assets/images/gyn4.avif" alt="" class="responsive-img materialboxed">
-          </div>
-        </div>
-        </div>
-        <div class="row">
-          <div class="col l6 m6 s12 my-1">
-            <img src="/assets/images/gyn5.avif" alt="" class="responsive-img materialboxed">
-          </div>
-          <div class="col l6 m6 s12">
-            <img src="/assets/images/gyn9.avif" alt="" class="responsive-img  materialboxed">
-          </div>
-        </div>
-        <h4 class="">Other Services Provided</h4>
-            <a href="dental-service.html" class="black-text hover">Dental-Services
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-            </a><br>
-            <a href="pedetritian.html" class="black-text hover">Pediatrician
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-3 hover" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-            </a><br>
-            <a href="special-service.html" class="black-text hover">Special-Service
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-            </a><br>
-            <a href="surgery-service.html" class="black-text hover">Surgery-Service
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-            </a><br>
-            <a href="emergency.html" class="black-text hover">Emergency
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-            </a>
-      </main>
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-danger btn-floating btn-lg back-to-top" id="btn-back-to-top">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
+    
+    <main>
 
-      <footer>
+        <!-- Contact Us Section -->
+        <section class="py-3 contact-section-2 border-bottom" id="contactus">
+            <div class="container py-3">
+                <div class="contact-card row text-center" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Left column: contact info -->
+                    <div class="col-lg-12 px-4 contact-info"><br>
+                        <div class="cta-section" data-aos="fade-up" data-aos-delay="100">
+                            <h2>Ready to Take Care of Your Health?</h2>
+                            <p>
+                                Don’t wait for tomorrow. Book an appointment today and take the first step 
+                                towards better health with our expert medical team.
+                            </p>
+                            <div class="cta-buttons">
+                                <a href="#appointment" class="btn btn-secondary">Book Appointment Now</a>
+                                <a href="tel:+2347046900529" style="text-decoration: none !important;">
+                                    <span class="emergency">
+                                        <i class="bi bi-telephone"></i> Emergency: <strong>+234 704 690 0529</strong>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right column: form -->
+                    <div class="col-lg-12 p-5 text-start">
+                        <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.18526545507092!2d7.3395907133817575!3d9.157697948848305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd9acb4dde4df%3A0xe08f37c5f0fcd9cf!2sKubwa%20General%20Hospital!5e0!3m2!1sen!2sng!4v1755477537097!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div><hr>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
         <section class="footer-section">
             <div class="container">
                 <div class="row gx-5 pt-4">
                     <!-- LEFT COLUMN -->
                     <div class="col-md-6 pb-3">
                         <div class="footer-title mb-4">
-                            <img src="/assets/images/logo.png" style="width: 65px !important;" alt="">
+                            <img src="assets/images/logo.png" style="width: 65px !important;" alt="">
                         </div>
                         <p class="footer-text">
                             <b>Kubwa General Hospital,</b>
@@ -149,7 +158,7 @@
                             Abuja, Nigeria.
                         </p>
                         <div class="mb-4">
-                            <a href="contactus.html" class="btn btn-primary">Contact Us Today</a>
+                            <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
                         </div>
                     </div>
                     
@@ -163,7 +172,7 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="aboutus.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
-                                <li><a href="clients.html">Contact Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                             </div>
                             <!-- Socials -->
@@ -185,7 +194,8 @@
         </section>
     </footer>
 
-      <!-- bootstrap js -->
+
+    <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
     <!-- AOS JS -->
