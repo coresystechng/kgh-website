@@ -105,7 +105,7 @@
 </head>
 <body>
   <!-- HERO -->
-  <header class="hero" role="banner" aria-label="Dental clinic hero section">
+  <header class="hero" id="home2" role="banner" aria-label="Dental clinic hero section">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-7 col-md-12 hero-panel text-center text-lg-start">
@@ -148,6 +148,45 @@
       <path d="M0 40 C360 0 1080 80 1440 40 L1440 80 L0 80 Z" fill="rgba(0,0,0,0.06)"/>
     </svg>
   </header>
+
+  <nav class="navbar navbar-expand-lg py-3 fixed-top">
+        <div class="container-fluid container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" style="width: 45px !important;" alt="">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-4 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="/contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- Underline element -->
+        <div class="nav-underline"></div>
+    </nav>
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-danger btn-floating btn-lg back-to-top" id="btn-back-to-top">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
 
   <!--Main Section  -->
     <main class="container my-5">
@@ -248,7 +287,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg>
           </a><br>
-          <a href="pedeatrician.html" class="black-text hover">Pediatrician Services
+          <a href="pediatrician.html" class="black-text hover">Pediatrician Services
             <svg xmlns="http://www.w3.org/2000/svg" class="mb-3" fill="none" width="15px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-2 h-2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg>
@@ -421,7 +460,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const nav  = document.querySelector('.navbar');
-            const hero = document.getElementById('home');
+            const hero = document.getElementById('home2');
 
             console.log('NAV:', nav, 'HERO:', hero);
 
